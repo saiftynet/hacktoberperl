@@ -12,10 +12,15 @@ my $md="## Hacktoberfest 2024\n\n";
 foreach my $author (sort keys %$hacktoberPerl){
 	$md.="\n\n### $author\n\n";
 	foreach my $repo (@{$hacktoberPerl->{$author}}){
-		$md.="* [$repo](github.com/$author/$repo)\n";
+		$md.="* [$repo](http://github.com/$author/$repo)\n";
 	}
 }
-print $md;
+
+open my $fh, ">","README.md" or die $!;
+print $fh $md;
+close $fh;
+
+#print $md;
 #print Dumper($hacktoberPerl)
 
 __DATA__
