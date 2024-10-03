@@ -10,8 +10,8 @@ if ($_=~/^([^ ]+) \/ ([^ ]+)/){
 }
 my $md="## Hacktoberfest 2024\n\n";
 foreach my $author (sort keys %$hacktoberPerl){
-	$md.="\n\n### $author\n\n";
-	foreach my $repo (@{$hacktoberPerl->{$author}}){
+	$md.="\n\n### $author\n";
+	foreach my $repo (sort @{$hacktoberPerl->{$author}}){
 		$md.="* [$repo](http://github.com/$author/$repo)\n";
 	}
 }
@@ -86,7 +86,7 @@ doujinshi
 nas
 hacktoberfest
 sadpanda
-Updated 2 days ago
+Updated 16 hours ago
  Perl
 Perl / perl5
  Code
@@ -126,7 +126,7 @@ remote-desktop
 libvirt
 hacktoberfest
 vdi
-Updated 9 hours ago
+Updated 10 hours ago
  Perl
 percona / pg_stat_monitor
  Code
@@ -157,7 +157,7 @@ perl
 cpan
 metacpan
 hacktoberfest
-Updated 1 hour ago
+Updated 2 days ago
  Perl
 os-autoinst / openQA
  Code
@@ -171,7 +171,7 @@ perl
 test-automation
 hacktoberfest
 test-scheduling
-Updated 2 hours ago
+Updated 7 hours ago
  Perl
 metacpan / metacpan-api
  Code
@@ -184,7 +184,7 @@ perl
 cpan
 metacpan
 hacktoberfest
-Updated 3 hours ago
+Updated yesterday
  Perl
 petdance / bobby-tables
  Code
@@ -210,7 +210,7 @@ mailing-list
 hacktoberfest
 sympa
 discussion-platform
-Updated 2 days ago
+Updated 4 days ago
  Perl
 libwww-perl / libwww-perl
  Code
@@ -221,6 +221,15 @@ The libwww-perl collection is a set of Perl modules that provides a simple, cons
 hacktoberfest
 Updated on Aug 18
  Perl
+manwar / perlweeklychallenge-club
+ Code
+ Issues
+ Pull requests
+Knowledge base for The Weekly Challenge club members using Perl, Raku, Ada, APL, Awk, Bash, BASIC, Bc, Befunge-93, Bourne Shell, BQN, Brainfuck, C3, C, CESIL, C++, C#, Clojure, COBOL, Coconut, Crystal, D, Dart, Dc, Elm, Emacs Lisp, Erlang, Excel VBA, Fennel, Fish, Forth, Fortran, Gembase, GNAT, Go, Haskell, Haxe, HTML, Idris, IO, J, Janet, Java,…
+
+hacktoberfest
+Updated 20 hours ago
+ Perl
 mvz / email-outlook-message-perl
  Code
  Issues
@@ -229,7 +238,7 @@ Email::Outlook::Message Perl module for reading Outlook .msg files
 
 perl
 hacktoberfest
-Updated last month
+Updated yesterday
  Perl
 moose / Moose
  Code
@@ -316,16 +325,7 @@ apache-drill
 anonymize
 solrcloud
 recaser
-Updated last week
- Perl
-os-autoinst / os-autoinst-distri-opensuse
- Code
- Issues
- Pull requests
-os-autoinst test cases for openSUSE
-
-hacktoberfest
-Updated 4 hours ago
+Updated 2 weeks ago
  Perl
 dbsrgits / sql-translator
  Code
@@ -335,6 +335,15 @@ SQL::Translator (SQLFairy)
 
 hacktoberfest
 Updated on Apr 15
+ Perl
+os-autoinst / os-autoinst-distri-opensuse
+ Code
+ Issues
+ Pull requests
+os-autoinst test cases for openSUSE
+
+hacktoberfest
+Updated 3 hours ago
  Perl
 domm / App-TimeTracker
  Code
@@ -387,7 +396,7 @@ hacktoberfest
 etsiit
 hacktoberfest2020
 hacktoberfest2023
-Updated last week
+Updated yesterday
  Perl
 HariSekhon / Spotify-tools
  Code
@@ -408,7 +417,7 @@ spotify-web-api
 spotify-metadata-api
 spotify-cmd
 spotify-uri
-Updated last week
+Updated 2 weeks ago
  Perl
 Kelp-framework / Kelp
  Code
@@ -443,7 +452,7 @@ oalders / http-browserdetect
 Determine the Web browser, version, and platform from an HTTP user agent string
 
 hacktoberfest
-Updated 3 weeks ago
+Updated yesterday
  Perl
 bucardo / dbdpg
  Code
@@ -457,7 +466,7 @@ perl
 postgresql
 libpq
 hacktoberfest
-Updated 2 days ago
+Updated 4 days ago
  Perl
 bucardo / tail_n_mail
  Code
@@ -479,7 +488,7 @@ shlomif / Freenode-programming-channel-FAQ
 A Frequently Asked Questions List of the Freenode ##programming Channel.
 
 hacktoberfest
-Updated yesterday
+Updated 3 days ago
  Perl
 libwww-perl / URI
  Code
@@ -522,15 +531,6 @@ Feel free to create new file, don't hesitate to pull your code, the most importa
 hacktoberfest
 Updated on Oct 18, 2022
  Perl
-Perl / docker-perl-tester
- Code
- Issues
- Pull requests
-Docker images with pre-installed test modules and test dependencies for CPAN modules
-
-hacktoberfest
-Updated on May 15
- Perl
 perl-workflow / perl-workflow
  Code
  Issues
@@ -553,7 +553,16 @@ libwww-perl / HTTP-Message
 The HTTP-Message distribution contains classes useful for representing the messages passed in HTTP style communication.
 
 hacktoberfest
-Updated on May 27
+Updated 3 hours ago
+ Perl
+Perl / docker-perl-tester
+ Code
+ Issues
+ Pull requests
+Docker images with pre-installed test modules and test dependencies for CPAN modules
+
+hacktoberfest
+Updated yesterday
  Perl
 Raku / modules.raku.org
  Code
@@ -630,13 +639,6 @@ hacktoberfest
 dancer
 Updated on Sep 6, 2016
  Perl
-perlancar / perl-App-fsql
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Jul 17
- Perl
 libwww-perl / Net-HTTP
  Code
  Issues
@@ -645,6 +647,13 @@ Low-level HTTP client
 
 hacktoberfest
 Updated on Jun 16, 2023
+ Perl
+perlancar / perl-App-fsql
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Jul 17
  Perl
 HariSekhon / lib
  Code
@@ -672,7 +681,7 @@ cloudera-manager
 mapr
 datastax
 biginsights
-Updated last week
+Updated 2 weeks ago
  Perl
 perl-ide / App-perlimports
  Code
@@ -700,7 +709,7 @@ travis-ci
 perl
 cpan
 hacktoberfest
-Updated yesterday
+Updated 3 days ago
  Perl
 davorg-cpan / xml-feed
  Code
@@ -769,13 +778,6 @@ perl
 hacktoberfest
 Updated on Dec 5, 2022
  Perl
-neilb / CPAN-Authors-Guide
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Oct 20, 2022
- Perl
 zakame / hashids.pm
  Code
  Issues
@@ -793,19 +795,25 @@ hacktoberfest
 database-ids
 Updated on Dec 17, 2020
  Perl
-Perl-Bitcoin / Bitcoin-Crypto
+neilb / CPAN-Authors-Guide
  Code
  Issues
  Pull requests
- Discussions
-Bitcoin::Crypto CPAN distribution
-
-bitcoin
-perl
-cryptocurrency
-cpan
 hacktoberfest
-Updated 3 days ago
+Updated on Oct 20, 2022
+ Perl
+jacoby / expect.pm
+ Code
+ Issues
+ Pull requests
+Official source code of the Expect Perl module
+
+perl
+perl5
+cpan
+expect
+hacktoberfest
+Updated on Mar 13
  Perl
 shlomif / what-you-should-know-about-automated-testing
  Code
@@ -838,18 +846,19 @@ hacktoberfest
 allalgorithms
 Updated on Oct 3, 2021
  Perl
-jacoby / expect.pm
+Perl-Bitcoin / Bitcoin-Crypto
  Code
  Issues
  Pull requests
-Official source code of the Expect Perl module
+ Discussions
+Bitcoin::Crypto CPAN distribution
 
+bitcoin
 perl
-perl5
+cryptocurrency
 cpan
-expect
 hacktoberfest
-Updated on Mar 13
+Updated 5 days ago
  Perl
 petdance / perl-critic-bangs
  Code
@@ -933,14 +942,18 @@ ioloop
 subreaper
 Updated on Dec 5, 2023
  Perl
-neilb / Text-Table-Tiny
+oalders / html-restrict
  Code
  Issues
  Pull requests
-Perl module for generating text tables from arrays of data
+HTML::Restrict - Strip away unwanted HTML tags
 
+parse
+perl
 hacktoberfest
-Updated on Jun 17, 2022
+strip-html
+unwanted-html-tags
+Updated last month
  Perl
 techgaun / dotfiles
  Code
@@ -956,20 +969,16 @@ vim-configuration
 nvim
 spacevim
 hacktoberfest
-Updated 5 days ago
+Updated last week
  Perl
-oalders / html-restrict
+neilb / Text-Table-Tiny
  Code
  Issues
  Pull requests
-HTML::Restrict - Strip away unwanted HTML tags
+Perl module for generating text tables from arrays of data
 
-parse
-perl
 hacktoberfest
-strip-html
-unwanted-html-tags
-Updated last month
+Updated on Jun 17, 2022
  Perl
 andinus / draco
  Code
@@ -981,15 +990,6 @@ reddit
 org-mode
 hacktoberfest
 Updated on Aug 9, 2022
- Perl
-shlomif / perl-XML-RSS
- Code
- Issues
- Pull requests
-The Repository for the CPAN XML::RSS module for parsing and generating various versions of RSS.
-
-hacktoberfest
-Updated on Dec 26, 2023
  Perl
 bluet / jaipo
  Code
@@ -1026,6 +1026,15 @@ Web front end to C++, assembly, or CUDA compilers.
 
 hacktoberfest
 Updated on May 18
+ Perl
+shlomif / perl-XML-RSS
+ Code
+ Issues
+ Pull requests
+The Repository for the CPAN XML::RSS module for parsing and generating various versions of RSS.
+
+hacktoberfest
+Updated on Dec 26, 2023
  Perl
 PerlToolsTeam / planetperl
  Code
@@ -1086,21 +1095,6 @@ Translate various formats into locations in files
 hacktoberfest
 Updated on Apr 10
  Perl
-bluet / p5-MojoX-Session-Store-Redis
- Code
- Issues
- Pull requests
-Redis DB Store for MojoX::Session
-
-redis
-perl
-web-framework
-mojolicious
-session-store
-hacktoberfest
-in-memory-database
-Updated on Feb 20, 2017
- Perl
 bbrtj / btcpaywall
  Code
  Issues
@@ -1120,6 +1114,21 @@ perlancar / perl-Text-ANSITable
 hacktoberfest
 Updated on Jul 17
  Perl
+bluet / p5-MojoX-Session-Store-Redis
+ Code
+ Issues
+ Pull requests
+Redis DB Store for MojoX::Session
+
+redis
+perl
+web-framework
+mojolicious
+session-store
+hacktoberfest
+in-memory-database
+Updated on Feb 20, 2017
+ Perl
 os-autoinst / os-autoinst-distri-openQA
  Code
  Issues
@@ -1127,7 +1136,31 @@ os-autoinst / os-autoinst-distri-openQA
 os-autoinst test cases for openQA
 
 hacktoberfest
-Updated 3 days ago
+Updated 5 days ago
+ Perl
+bluet / AnyEvent-XMLRPC
+ Code
+ Issues
+ Pull requests
+(Perl) Non-Blocking XMLRPC. Originally a AnyEvent implementation of Frontier.
+
+perl
+event-driven
+rpc-framework
+hacktoberfest
+Updated on Feb 12, 2017
+ Perl
+cpanel / Test-MockFile
+ Code
+ Issues
+ Pull requests
+Mocks open and close
+
+testing
+perl
+perl5
+hacktoberfest
+Updated on May 29
  Perl
 shlomif / perl-Config-IniFiles
  Code
@@ -1161,30 +1194,6 @@ perl5
 hacktoberfest
 Updated on Oct 24, 2020
  Perl
-bluet / AnyEvent-XMLRPC
- Code
- Issues
- Pull requests
-(Perl) Non-Blocking XMLRPC. Originally a AnyEvent implementation of Frontier.
-
-perl
-event-driven
-rpc-framework
-hacktoberfest
-Updated on Feb 12, 2017
- Perl
-cpanel / Test-MockFile
- Code
- Issues
- Pull requests
-Mocks open and close
-
-testing
-perl
-perl5
-hacktoberfest
-Updated on May 29
- Perl
 davorg-cpan / svg-timeline
  Code
  Issues
@@ -1198,21 +1207,14 @@ cpan
 hacktoberfest
 Updated on Jan 23
  Perl
-perlancar / perl-Gepok
+oalders / git-helpers
  Code
  Issues
  Pull requests
-hacktoberfest
-Updated on Jul 17
- Perl
-davorg / twittelection
- Code
- Issues
- Pull requests
-TwittElection web site
+Handy shortcuts for common Git commands
 
 hacktoberfest
-Updated on Jun 14
+Updated last month
  Perl
 helioloureiro / perlbrasilbot
  Code
@@ -1247,14 +1249,21 @@ znuny
 otobo
 Updated on Jun 3, 2023
  Perl
-oalders / git-helpers
+perlancar / perl-Gepok
  Code
  Issues
  Pull requests
-Handy shortcuts for common Git commands
+hacktoberfest
+Updated on Jul 17
+ Perl
+davorg / twittelection
+ Code
+ Issues
+ Pull requests
+TwittElection web site
 
 hacktoberfest
-Updated last month
+Updated on Jun 14
  Perl
 domm / Acme-ReturnValue
  Code
@@ -1265,6 +1274,29 @@ Report interesting Perl module return values
 cpan
 hacktoberfest
 Updated on May 10, 2021
+ Perl
+zakame / Data-Cuid
+ Code
+ Issues
+ Pull requests
+Collision-resistant IDs, ported for Perl
+
+encoding
+perl
+perl-module
+ids
+hacktoberfest
+Updated on Dec 17, 2020
+ Perl
+rocky-linux / os-autoinst-distri-rocky
+ Code
+ Issues
+ Pull requests
+Tests and images for testing Rocky with openQA
+
+hacktoberfest
+openqa
+Updated yesterday
  Perl
 shlomif / Inline-Ruby
  Code
@@ -1291,28 +1323,16 @@ The Perl School web site
 hacktoberfest
 Updated on Aug 23
  Perl
-zakame / Data-Cuid
+petdance / html-tidy5
  Code
  Issues
  Pull requests
-Collision-resistant IDs, ported for Perl
+HTML::Tidy5, Perl module for checking HTML5, based on https://github.com/htacg/tidy-html5
 
-encoding
 perl
-perl-module
-ids
 hacktoberfest
-Updated on Dec 17, 2020
- Perl
-rocky-linux / os-autoinst-distri-rocky
- Code
- Issues
- Pull requests
-Tests and images for testing Rocky with openQA
-
-hacktoberfest
-openqa
-Updated 4 days ago
+html-tidy
+Updated on Aug 12
  Perl
 Kanazawanaoaki / paper-utils
  Code
@@ -1335,19 +1355,7 @@ perl-module
 perl5
 hacktoberfest
 holiday-calculation
-Updated 2 days ago
- Perl
-davorg / klortho
- Code
- Issues
- Pull requests
-Advice from Klortho
-
-perl
-hacktoberfest
-web-service
-klortho
-Updated on Aug 7
+Updated 4 days ago
  Perl
 JJ / IV-22-23
  Code
@@ -1382,17 +1390,6 @@ perl-script
 hacktoberfest
 Updated on Mar 23
  Perl
-petdance / html-tidy5
- Code
- Issues
- Pull requests
-HTML::Tidy5, Perl module for checking HTML5, based on https://github.com/htacg/tidy-html5
-
-perl
-hacktoberfest
-html-tidy
-Updated on Aug 12
- Perl
 choroba / karel
  Code
  Issues
@@ -1405,6 +1402,13 @@ perl5
 hacktoberfest
 marpa
 Updated on Jan 2
+ Perl
+perlancar / perl-Bitcoin-BIP39
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Jul 17
  Perl
 libwww-perl / HTTP-Daemon
  Code
@@ -1435,6 +1439,18 @@ useragent
 hacktoberfest
 lwp
 Updated last month
+ Perl
+davorg / klortho
+ Code
+ Issues
+ Pull requests
+Advice from Klortho
+
+perl
+hacktoberfest
+web-service
+klortho
+Updated on Aug 7
  Perl
 shawnlaffan / perl-pp-autolink
  Code
@@ -1467,7 +1483,7 @@ hacktoberfest
 solitaire-game
 patience
 golf
-Updated 2 days ago
+Updated 4 days ago
  Perl
 davorg-cpan / array-compare
  Code
@@ -1493,18 +1509,6 @@ cpan
 hacktoberfest
 Updated on Jan 23
  Perl
-bucardo / postgres_all_versions
- Code
- Issues
- Pull requests
-Generate large single page about all Postgres versions
-
-postgres
-perl
-postgresql
-hacktoberfest
-Updated on May 9
- Perl
 perlancar / perl-App-nauniq
  Code
  Issues
@@ -1521,12 +1525,17 @@ My Collection of various short, exploratory or demonstrative code files in Perl,
 hacktoberfest
 Updated on Jul 24
  Perl
-perlancar / perl-Bitcoin-BIP39
+bucardo / postgres_all_versions
  Code
  Issues
  Pull requests
+Generate large single page about all Postgres versions
+
+postgres
+perl
+postgresql
 hacktoberfest
-Updated on Jul 17
+Updated yesterday
  Perl
 reneeb / MySQL-Workbench-Parser
  Code
@@ -1539,13 +1548,6 @@ parser
 hacktoberfest
 workbench
 Updated on Dec 6, 2021
- Perl
-perlancar / perl-Getopt-Long-Subcommand
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Jul 17
  Perl
 bluet / AnyEvent-CallbackStack
  Code
@@ -1589,6 +1591,13 @@ find-files
 search-repository
 Updated on Nov 16, 2019
  Perl
+perlancar / perl-Getopt-Long-Subcommand
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Jul 17
+ Perl
 libwww-perl / HTML-Form
  Code
  Issues
@@ -1604,6 +1613,13 @@ simbabque / Mojo-Log-Colored
  Pull requests
 hacktoberfest
 Updated on Jun 19, 2023
+ Perl
+perlancar / perl-Text-ANSI-Util
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Jul 17
  Perl
 shlomif / binary-puzzle-garden
  Code
@@ -1625,7 +1641,7 @@ version
 perl5
 hacktoberfest
 explicit
-Updated 43 minutes ago
+Updated 2 days ago
  Perl
 bluet / Algorithm-Bitonic-Sort
  Code
@@ -1640,55 +1656,6 @@ parallel-computing
 sort
 hacktoberfest
 Updated on Feb 12, 2017
- Perl
-shlomif / docmake
- Code
- Issues
- Pull requests
-Docmake is an automated builder from DocBook/XML to its output formats (e.g XHTML5 or PDF). It aims to be a saner replacement for xmlto.
-
-open-source
-xml
-docbook
-hacktoberfest
-docbook5
-Updated on Jul 8
- Perl
-perlancar / perl-Text-ANSI-Util
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Jul 17
- Perl
-libwww-perl / HTTP-Cookies
- Code
- Issues
- Pull requests
-Objects that represent a "cookie jar"
-
-perl
-cookies
-hacktoberfest
-Updated last month
- Perl
-shlomif / app-notifier
- Code
- Issues
- Pull requests
-HTTP Client/Server For Desktop Notifications
-
-hacktoberfest
-Updated on Apr 6
- Perl
-shlomif / perl-graph-easy
- Code
- Issues
- Pull requests
-cpan
-
-hacktoberfest
-Updated 2 weeks ago
  Perl
 shlomif / perl-Statistics-Descriptive
  Code
@@ -1719,6 +1686,62 @@ video-processing
 hacktoberfest
 Updated on Jun 14
  Perl
+shlomif / app-notifier
+ Code
+ Issues
+ Pull requests
+HTTP Client/Server For Desktop Notifications
+
+hacktoberfest
+Updated on Apr 6
+ Perl
+shlomif / perl-graph-easy
+ Code
+ Issues
+ Pull requests
+cpan
+
+hacktoberfest
+Updated 3 weeks ago
+ Perl
+shlomif / docmake
+ Code
+ Issues
+ Pull requests
+Docmake is an automated builder from DocBook/XML to its output formats (e.g XHTML5 or PDF). It aims to be a saner replacement for xmlto.
+
+open-source
+xml
+docbook
+hacktoberfest
+docbook5
+Updated on Jul 8
+ Perl
+libwww-perl / HTTP-Cookies
+ Code
+ Issues
+ Pull requests
+Objects that represent a "cookie jar"
+
+perl
+cookies
+hacktoberfest
+Updated last month
+ Perl
+perlancar / perl-App-OrgUtils
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Jul 17
+ Perl
+perlancar / perl-App-perlmv
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Jul 17
+ Perl
 jonasbn / perl-task-date-holidays
  Code
  Issues
@@ -1735,39 +1758,7 @@ holiday-calculation
 perl-distribution
 Updated last week
  Perl
-perlancar / perl-App-OrgUtils
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Jul 17
- Perl
-perlancar / perl-App-perlmv
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Jul 17
- Perl
-shlomif / better-scm
- Code
- Issues
- Pull requests
-Sources of the Better-SCM Site
-
-hacktoberfest
-Updated on Jun 27
- Perl
-verlin / Device-TPLink
- Code
- Issues
- Pull requests
-Control TP-Link smart home products using Perl
-
-hacktoberfest
-Updated on Jan 23, 2018
- Perl
-perlancar / perl-Calendar-Indonesia-Holiday
+perlancar / perl-WordListsC-Password-10Million
  Code
  Issues
  Pull requests
@@ -1804,6 +1795,15 @@ perlancar / perl-App-lcpan
 hacktoberfest
 Updated on Jul 17
  Perl
+shlomif / better-scm
+ Code
+ Issues
+ Pull requests
+Sources of the Better-SCM Site
+
+hacktoberfest
+Updated on Jun 27
+ Perl
 JJ / perl-GitHub-Actions
  Code
  Issues
@@ -1815,7 +1815,24 @@ hacktoberfest
 github-actions
 hacktoberfest2021
 hacktoberfest2022
-Updated 3 weeks ago
+Updated last month
+ Perl
+domm / App-TimeTracker-Trello
+ Code
+ Issues
+ Pull requests
+App::TimeTracker Trello plugin
+
+timetracker
+hacktoberfest
+Updated on Mar 3, 2021
+ Perl
+perlancar / perl-Org-To-HTML
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Jul 17
  Perl
 shlomif / perl-File-Dir-Dumper
  Code
@@ -1845,13 +1862,6 @@ cpan
 hacktoberfest
 cpan-modules
 Updated on Jan 23
- Perl
-perlancar / perl-WordListsC-Password-10Million
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Jul 17
  Perl
 davorg-cpan / svg-trafficlight
  Code
@@ -1887,6 +1897,52 @@ xhtml5
 fiction-xml
 Updated on Jun 5
  Perl
+leon-wolf / znuny-playbook
+ Code
+ Issues
+ Pull requests
+Vagrant and Ansible Setup for Znuny / ((OTRS)) CE for Development on M1 Mac
+
+hacktoberfest
+Updated on Oct 5, 2022
+ Perl
+perlancar / perl-Getopt-Long-Complete
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+hacktoberfest2021
+Updated on Jul 17
+ Perl
+davorg-cpan / svg-timeline-genealogy
+ Code
+ Issues
+ Pull requests
+Perl module to create genealogical timelines in SVG
+
+svg
+perl
+genealogy
+cpan
+hacktoberfest
+Updated on Jan 23
+ Perl
+verlin / Device-TPLink
+ Code
+ Issues
+ Pull requests
+Control TP-Link smart home products using Perl
+
+hacktoberfest
+Updated on Jan 23, 2018
+ Perl
+perlancar / perl-Calendar-Indonesia-Holiday
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Jul 17
+ Perl
 shawnlaffan / perl-alien-gdal
  Code
  Issues
@@ -1897,23 +1953,6 @@ gdal
 hacktoberfest
 perl-alien
 Updated 3 weeks ago
- Perl
-domm / App-TimeTracker-Trello
- Code
- Issues
- Pull requests
-App::TimeTracker Trello plugin
-
-timetracker
-hacktoberfest
-Updated on Mar 3, 2021
- Perl
-perlancar / perl-Org-To-HTML
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Jul 17
  Perl
 domm / InfluxDB-LineProtocol
  Code
@@ -1943,19 +1982,6 @@ hacktoberfest
 geos
 perl-alien
 Updated on May 20, 2023
- Perl
-davorg-cpan / svg-timeline-genealogy
- Code
- Issues
- Pull requests
-Perl module to create genealogical timelines in SVG
-
-svg
-perl
-genealogy
-cpan
-hacktoberfest
-Updated on Jan 23
  Perl
 domm / Business-DPD
  Code
@@ -2000,22 +2026,13 @@ cpan
 hacktoberfest
 Updated on Aug 30
  Perl
-leon-wolf / znuny-playbook
+poti1 / e
  Code
  Issues
  Pull requests
-Vagrant and Ansible Setup for Znuny / ((OTRS)) CE for Development on M1 Mac
-
+perl5
 hacktoberfest
-Updated on Oct 5, 2022
- Perl
-perlancar / perl-Getopt-Long-Complete
- Code
- Issues
- Pull requests
-hacktoberfest
-hacktoberfest2021
-Updated on Jul 17
+Updated last week
  Perl
 davorg / lastfm-feed
  Code
@@ -2068,152 +2085,7 @@ debugging
 perl
 perl5
 hacktoberfest
-Updated 5 days ago
- Perl
-poti1 / e
- Code
- Issues
- Pull requests
-perl5
-hacktoberfest
-Updated 5 days ago
- Perl
-shlomif / HTML-Spelling-Site
- Code
- Issues
- Pull requests
-Spell checking system/framework for an entire static HTML site.
-
-hacktoberfest
-Updated on Sep 13, 2023
- Perl
-shawnlaffan / perl-statistics-sampler-multinomial
- Code
- Issues
- Pull requests
-Multinomial sampler for Perl
-
-statistics
-perl
-prng
-hacktoberfest
-multinomial
-Updated on Sep 24, 2022
- Perl
-petdance / carp-assert-more
- Code
- Issues
- Pull requests
-Carp::Assert::More, handy assertion functions for Perl
-
-perl
-assertions
-perl5
-hacktoberfest
-Updated on Mar 11
- Perl
-perlancar / perl-File-chown
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Jul 17
- Perl
-polettix / Log-Log4perl-Tiny
- Code
- Issues
- Pull requests
-Mimic Log::Log4perl in one single module
-
-hacktoberfest
-Updated on Oct 9, 2022
- Perl
-davorg-cpan / app-mergecal
- Code
- Issues
- Pull requests
-Command-line program to merge iCal calendars
-
-perl
-cpan
-hacktoberfest
-Updated on Aug 18
- Perl
-davorg-cpan / tie-hash-fixedkeys
- Code
- Issues
- Pull requests
-Perl extension for hashes with fixed keys
-
-perl
-cpan
-hacktoberfest
-Updated on Jan 23
- Perl
-polettix / Log-Log4perl-Tiny
- Code
- Issues
- Pull requests
-Mimic Log::Log4perl in one single module
-
-hacktoberfest
-Updated on Oct 9, 2022
- Perl
-davorg-cpan / calendar-simple
- Code
- Issues
- Pull requests
-Perl library to create simple calendars
-
-calendar
-perl
-cpan
-hacktoberfest
-Updated on May 4
- Perl
-domm / DBIx-SchemaChecksum
- Code
- Issues
- Pull requests
-Generate checksums of database schemas
-
-database-schema
-hacktoberfest
-Updated on Jan 26, 2021
- Perl
-domm / Module-ExtractUse
- Code
- Issues
- Pull requests
-Find out what modules are used in Perl code
-
-hacktoberfest
-Updated on Jun 30, 2023
- Perl
-shlomif / Adrian-Ettlinger-Emails-Collection
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Sep 21, 2018
- Perl
-PerlServices / OPM-Validate
- Code
- Issues
- Pull requests
-Validate OPM packages for ticketsystems
-
-hacktoberfest
-znuny
-otobo
-Updated on Jun 2, 2023
- Perl
-perlancar / perl-Config-IOD
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Jul 17
+Updated last week
  Perl
 perlancar / perl-App-pause
  Code
@@ -2274,6 +2146,162 @@ perlancar / perl-App-PMUtils
 hacktoberfest
 Updated on Aug 30
  Perl
+davorg / Paste
+ Code
+ Issues
+ Pull requests
+A simple pastebin based on Dancer2
+
+hacktoberfest
+Updated on Aug 26, 2023
+ Perl
+davorg-cpan / app-mergecal
+ Code
+ Issues
+ Pull requests
+Command-line program to merge iCal calendars
+
+perl
+cpan
+hacktoberfest
+Updated on Aug 18
+ Perl
+davorg-cpan / tie-hash-fixedkeys
+ Code
+ Issues
+ Pull requests
+Perl extension for hashes with fixed keys
+
+perl
+cpan
+hacktoberfest
+Updated on Jan 23
+ Perl
+shlomif / HTML-Spelling-Site
+ Code
+ Issues
+ Pull requests
+Spell checking system/framework for an entire static HTML site.
+
+hacktoberfest
+Updated on Sep 13, 2023
+ Perl
+shawnlaffan / perl-statistics-sampler-multinomial
+ Code
+ Issues
+ Pull requests
+Multinomial sampler for Perl
+
+statistics
+perl
+prng
+hacktoberfest
+multinomial
+Updated on Sep 24, 2022
+ Perl
+petdance / carp-assert-more
+ Code
+ Issues
+ Pull requests
+Carp::Assert::More, handy assertion functions for Perl
+
+perl
+assertions
+perl5
+hacktoberfest
+Updated on Mar 11
+ Perl
+perlancar / perl-File-chown
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Jul 17
+ Perl
+domm / DBIx-SchemaChecksum
+ Code
+ Issues
+ Pull requests
+Generate checksums of database schemas
+
+database-schema
+hacktoberfest
+Updated on Jan 26, 2021
+ Perl
+domm / Module-ExtractUse
+ Code
+ Issues
+ Pull requests
+Find out what modules are used in Perl code
+
+hacktoberfest
+Updated on Jun 30, 2023
+ Perl
+shlomif / Adrian-Ettlinger-Emails-Collection
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Sep 21, 2018
+ Perl
+PerlServices / OPM-Validate
+ Code
+ Issues
+ Pull requests
+Validate OPM packages for ticketsystems
+
+hacktoberfest
+znuny
+otobo
+Updated on Jun 2, 2023
+ Perl
+perlancar / perl-Config-IOD
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Jul 17
+ Perl
+shlomif / missile-vs-melee-take-three
+ Code
+ Issues
+ Pull requests
+"Queen Amidala vs. The Klingon Warriors" - an enhanced/modernised version of the David and Goliath story set in a fanfic crossoverred Star Trek and Star Wars universe. "Why can't we have both?" (CC-by)
+
+star-wars
+hacking
+david
+creative-commons
+fanfiction
+action
+jedis
+star-trek
+hacktoberfest
+klingons
+klingons-warriors
+Updated on Dec 14, 2020
+ Perl
+Jmainguy / asciiquarium
+ Code
+ Issues
+ Pull requests
+Enjoy the mysteries of the sea from the safety of your own terminal!
+
+hacktoberfest
+Updated on Apr 5
+ Perl
+davorg-cpan / calendar-simple
+ Code
+ Issues
+ Pull requests
+Perl library to create simple calendars
+
+calendar
+perl
+cpan
+hacktoberfest
+Updated on May 4
+ Perl
 giterlizzi / perl-Mojolicious-Plugin-DataTables
  Code
  Issues
@@ -2319,6 +2347,72 @@ perl
 cpan
 hacktoberfest
 Updated last month
+ Perl
+mikkoi / io-iron
+ Code
+ Issues
+ Pull requests
+Client Libraries to Iron.io services IronCache, IronMQ and IronWorker.
+
+perl
+ironmq
+hacktoberfest
+ironworker
+hacktoberfest-2019
+ironcache
+Updated on Sep 2, 2023
+ Perl
+shlomif / cpan-smoke-auto-setup
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Aug 23, 2019
+ Perl
+shlomif / Docker-CLI-Wrapper
+ Code
+ Issues
+ Pull requests
+wrapper for the Docker CLI
+
+hacktoberfest
+Updated on Jul 30, 2023
+ Perl
+davorg-cpan / audiofile-info
+ Code
+ Issues
+ Pull requests
+Perl extension to get info from audio files.
+
+audio
+perl
+cpan
+hacktoberfest
+Updated on Jan 23
+ Perl
+poti1 / app-pod
+ Code
+ Issues
+ Pull requests
+Quickly show available class methods and documentation.
+
+parser
+perl
+perl5
+pod
+command-line-tool
+hacktoberfest
+perldoc
+Updated last week
+ Perl
+polettix / Log-Log4perl-Tiny
+ Code
+ Issues
+ Pull requests
+Mimic Log::Log4perl in one single module
+
+hacktoberfest
+Updated on Oct 9, 2022
  Perl
 domm / InfluxDB-Writer
  Code
@@ -2382,53 +2476,7 @@ shlomif / putting-cards-2019-2020
 Summary of Rindolfism, Shlomi Fish's personal and dynamic philosophy, as of 2019-2020
 
 hacktoberfest
-Updated last month
- Perl
-shlomif / missile-vs-melee-take-three
- Code
- Issues
- Pull requests
-"Queen Amidala vs. The Klingon Warriors" - an enhanced/modernised version of the David and Goliath story set in a fanfic crossoverred Star Trek and Star Wars universe. "Why can't we have both?" (CC-by)
-
-star-wars
-hacking
-david
-creative-commons
-fanfiction
-action
-jedis
-star-trek
-hacktoberfest
-klingons
-klingons-warriors
-Updated on Dec 14, 2020
- Perl
-Jmainguy / asciiquarium
- Code
- Issues
- Pull requests
-Enjoy the mysteries of the sea from the safety of your own terminal!
-
-hacktoberfest
-Updated on Apr 5
- Perl
-karenetheridge / B-Hooks-EndOfScope
- Code
- Issues
- Pull requests
-Execute code after a scope finished compilation
-
-hacktoberfest
-Updated on Mar 1
- Perl
-karenetheridge / Sub-Call-Tail
- Code
- Issues
- Pull requests
-Tail calls for subroutines and methods
-
-hacktoberfest
-Updated on Oct 2, 2022
+Updated on Sep 2
  Perl
 shlomif / SQL-Abstract
  Code
@@ -2460,6 +2508,17 @@ Perl module to make creating new Telegram bots easy
 hacktoberfest
 Updated 3 weeks ago
  Perl
+bbrtj / perl-algorithm-quadtree
+ Code
+ Issues
+ Pull requests
+Algorithm::QuadTree CPAN module
+
+algorithms
+perl
+hacktoberfest
+Updated on Nov 16, 2022
+ Perl
 davorg-cpan / symbol-approx-sub
  Code
  Issues
@@ -2472,21 +2531,6 @@ symbol-table
 cpan
 hacktoberfest
 Updated on Jan 23
- Perl
-poti1 / app-pod
- Code
- Issues
- Pull requests
-Quickly show available class methods and documentation.
-
-parser
-perl
-perl5
-pod
-command-line-tool
-hacktoberfest
-perldoc
-Updated 5 days ago
  Perl
 joemcmahon / graphviz-data-structure
  Code
@@ -2534,43 +2578,83 @@ perlancar / perl-Finance-Bank-ID-Mandiri
 hacktoberfest
 Updated on Jul 17
  Perl
-mikkoi / io-iron
+shlomif / learn-perl-org
  Code
  Issues
  Pull requests
-Client Libraries to Iron.io services IronCache, IronMQ and IronWorker.
-
-perl
-ironmq
-hacktoberfest
-ironworker
-hacktoberfest-2019
-ironcache
-Updated on Sep 2, 2023
- Perl
-shlomif / cpan-smoke-auto-setup
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Aug 23, 2019
- Perl
-shlomif / Docker-CLI-Wrapper
- Code
- Issues
- Pull requests
-wrapper for the Docker CLI
+Learn Perl website
 
 hacktoberfest
-Updated on Jul 30, 2023
+Updated on Oct 17, 2022
  Perl
-davorg-cpan / audiofile-info
+choroba / argv-ordata
  Code
  Issues
  Pull requests
-Perl extension to get info from audio files.
+If there's no input, read from the DATA handle
 
-audio
+perl5
+hacktoberfest
+contest-programming
+Updated on Sep 5, 2021
+ Perl
+shlomif / perl-App-Deps-Verify
+ Code
+ Issues
+ Pull requests
+An app and API to verify the presence of dependencies (Perl 5 modules, python3 modules, executables, etc.
+
+hacktoberfest
+Updated on May 14, 2023
+ Perl
+simbabque / Dancer2-Logger-Console-Colored
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Jul 2, 2020
+ Perl
+shlomif / validate-your-html
+ Code
+ Issues
+ Pull requests
+The what, why, and how, of having valid HTML
+
+html
+validation
+web
+html5
+standards
+www
+validate
+hacktoberfest
+valid
+Updated on Apr 5
+ Perl
+shlomif / shlomi-fish-sites--fonts
+ Code
+ Issues
+ Pull requests
+fonts needed by Shlomi Fish's sites
+
+hacktoberfest
+Updated on Jun 4
+ Perl
+JJ / plantilla-IV
+ Code
+ Issues
+ Pull requests
+Plantilla para los repositorios anuales de la asignatura Infraestructura Virtual de la UGR.
+
+hacktoberfest
+Updated 2 weeks ago
+ Perl
+davorg-cpan / template-plugin-xml-feed
+ Code
+ Issues
+ Pull requests
+Template plugin for XML::Feed
+
 perl
 cpan
 hacktoberfest
@@ -2689,278 +2773,76 @@ simbabque / Object-Destroyer
 hacktoberfest
 Updated on Mar 1
  Perl
-shlomif / learn-perl-org
+shlomif / App-xspf2m3u
  Code
  Issues
  Pull requests
-Learn Perl website
+Convert xspf playlists to m3u ones.
 
-hacktoberfest
-Updated on Oct 17, 2022
- Perl
-choroba / argv-ordata
- Code
- Issues
- Pull requests
-If there's no input, read from the DATA handle
-
-perl5
-hacktoberfest
-contest-programming
-Updated on Sep 5, 2021
- Perl
-shlomif / perl-App-Deps-Verify
- Code
- Issues
- Pull requests
-An app and API to verify the presence of dependencies (Perl 5 modules, python3 modules, executables, etc.
-
-hacktoberfest
-Updated on May 14, 2023
- Perl
-simbabque / Dancer2-Logger-Console-Colored
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Jul 2, 2020
- Perl
-shlomif / validate-your-html
- Code
- Issues
- Pull requests
-The what, why, and how, of having valid HTML
-
-html
-validation
-web
-html5
-standards
-www
-validate
-hacktoberfest
-valid
-Updated on Apr 5
- Perl
-shlomif / shlomi-fish-sites--fonts
- Code
- Issues
- Pull requests
-fonts needed by Shlomi Fish's sites
-
-hacktoberfest
-Updated on Jun 4
- Perl
-JJ / plantilla-IV
- Code
- Issues
- Pull requests
-Plantilla para los repositorios anuales de la asignatura Infraestructura Virtual de la UGR.
-
-hacktoberfest
-Updated 2 weeks ago
- Perl
-davorg-cpan / template-plugin-xml-feed
- Code
- Issues
- Pull requests
-Template plugin for XML::Feed
-
+mpv
+xml
 perl
-cpan
+xspf
+vlc
+vlc-media-player
 hacktoberfest
-Updated on Jan 23
+m3u
+Updated on Feb 20, 2022
  Perl
-jonasbn / Module-Info-File
+shlomif / perl-acme-gosub
  Code
  Issues
  Pull requests
-Retrieve module information from a file containing a Perl module
+hacktoberfest
+Updated on Oct 17, 2020
+ Perl
+shlomif / App-gimpgitbuild
+ Code
+ Issues
+ Pull requests
+Build GIMP from git
 
-perl
-cpan
 hacktoberfest
-Updated on Sep 25, 2019
+Updated on Jul 8, 2023
  Perl
-perlancar / perl-Parse-Netstat
+shlomif / perl-Module-Format-AsHTML
  Code
  Issues
  Pull requests
-hacktoberfest
-Updated on Dec 4, 2022
- Perl
-bigpresh / bot-basicbot-pluggable
- Code
- Issues
- Pull requests
-Pluggable perl IRC bot
+Generate HTML links to the modules on metacpan
 
+hacktoberfest
+Updated on Aug 3, 2020
+ Perl
+peeyush1999 / HackerRankContestPlagChecker
+ Code
+ Issues
+ Pull requests
+Developed a way to download submission from hackerrank and check plagrism on it
+
+hacktoberfest
+Updated on Oct 13, 2022
+ Perl
+choroba / tred-ud
+ Code
+ Issues
+ Pull requests
+TrEd Extension and Backend for Universal Dependencies
+
+nlp-parsing
+hacktoberfest
+Updated on Jul 20
+ Perl
+Perl-Bitcoin / App-Bitcoin-PaperWallet
+ Code
+ Issues
+ Pull requests
+App::Bitcoin::PaperWallet CPAN distribution
+
+bitcoin
 perl
 hacktoberfest
-Updated on Aug 10, 2023
- Perl
-billgerrard / google-content-api
- Code
- Issues
- Pull requests
-Google::ContentAPI - Perl module to interact with Google's Content API for Shopping
-
-google
-perl
-adwords
-shopping
-google-api
-hacktoberfest
-content-api
-Updated on Dec 11, 2020
- Perl
-shlomif / perl-Code-TidyAll-Plugin-Flake8
- Code
- Issues
- Pull requests
-A flake8 plugin for Code::TidyAll
-
-hacktoberfest
-Updated on Nov 20, 2021
- Perl
-jbob / the_queue
- Code
- Issues
- Pull requests
-Web-based queue thingy written with Perl/Mojolicious/MongoDB/Mandel.
-
-hacktoberfest
-Updated on Mar 4, 2023
- Perl
-shlomif / perl-svn-raweb-light
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Aug 23, 2019
- Perl
-perlancar / perl-Dist-Zilla-Plugin-PERLANCAR-CheckPendingRelease
- Code
- Issues
- Pull requests
-(No description)
-
-hacktoberfest
-Updated on Aug 14, 2020
- Perl
-shlomif / App-Timestamper
- Code
- Issues
- Pull requests
-A command line filter to prefix lines with the timestamps of their creation.
-
-hacktoberfest
-Updated on Jul 1
- Perl
-davorg-cpan / app-cpanmodulesite
- Code
- Issues
- Pull requests
-Automatically create a GitHub Pages site for a CPAN module
-
-perl
-cpan
-hacktoberfest
-Updated on Jan 24
- Perl
-shlomif / screenplays-common
- Code
- Issues
- Pull requests
-Common files for the screenplays hosted on http://www.shlomifish.org/
-
-hacktoberfest
-Updated on Oct 29, 2023
- Perl
-reanimatedprojects / rpgcat
- Code
- Issues
- Pull requests
-Catalyst based RPG framework
-
-rpg
-perl
-browser-game
-catalyst
-hacktoberfest
-Updated on Oct 13, 2020
- Perl
-shlomif / urpmi
- Code
- Issues
- Pull requests
-The Mageia Linux Software Installation and Management Tools
-
-hacktoberfest
-Updated on Apr 26, 2016
- Perl
-shlomif / perl-math-grahamfunction
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Oct 7, 2020
- Perl
-perlancar / perl-Games-Hangman
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Jul 17
- Perl
-davorg-cpan / template-plugin-audiofile-info
- Code
- Issues
- Pull requests
-Template Toolkit plugin for AudioFile::Info
-
-audio
-template
-perl
-cpan
-hacktoberfest
-Updated on Jan 23
- Perl
-perlancar / perl-Data-Sah
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Feb 16
- Perl
-shlomif / mousable
- Code
- Issues
- Pull requests
-Open source AJAX commenting engine (for static web pages, etc.)
-
-hacktoberfest
-Updated on Apr 5
- Perl
-shlomif / Sky-uploader
- Code
- Issues
- Pull requests
-The Sky uploader for uploading stuff using rsync/etc. to remote web-sites, from which they can be downloaded.
-
-hacktoberfest
-Updated on Apr 4
- Perl
-davorg-cpan / amazon-sites
- Code
- Issues
- Pull requests
-Perl extension containing various useful pieces of information about Amazon web sites
-
-perl
-cpan
-hacktoberfest
-Updated 3 weeks ago
+Updated on Aug 25
  Perl
 perlancar / perl-File-Write-Rotate
  Code
@@ -3074,7 +2956,104 @@ metacpan / sco-redirect
  Issues
  Pull requests
 hacktoberfest
-Updated 3 days ago
+Updated 5 days ago
+ Perl
+jonasbn / Module-Info-File
+ Code
+ Issues
+ Pull requests
+Retrieve module information from a file containing a Perl module
+
+perl
+cpan
+hacktoberfest
+Updated on Sep 25, 2019
+ Perl
+perlancar / perl-Parse-Netstat
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Dec 4, 2022
+ Perl
+bigpresh / bot-basicbot-pluggable
+ Code
+ Issues
+ Pull requests
+Pluggable perl IRC bot
+
+perl
+hacktoberfest
+Updated on Aug 10, 2023
+ Perl
+billgerrard / google-content-api
+ Code
+ Issues
+ Pull requests
+Google::ContentAPI - Perl module to interact with Google's Content API for Shopping
+
+google
+perl
+adwords
+shopping
+google-api
+hacktoberfest
+content-api
+Updated on Dec 11, 2020
+ Perl
+shlomif / perl-Code-TidyAll-Plugin-Flake8
+ Code
+ Issues
+ Pull requests
+A flake8 plugin for Code::TidyAll
+
+hacktoberfest
+Updated on Nov 20, 2021
+ Perl
+jbob / the_queue
+ Code
+ Issues
+ Pull requests
+Web-based queue thingy written with Perl/Mojolicious/MongoDB/Mandel.
+
+hacktoberfest
+Updated on Mar 4, 2023
+ Perl
+shlomif / perl-svn-raweb-light
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Aug 23, 2019
+ Perl
+perlancar / perl-Dist-Zilla-Plugin-PERLANCAR-CheckPendingRelease
+ Code
+ Issues
+ Pull requests
+(No description)
+
+hacktoberfest
+Updated on Aug 14, 2020
+ Perl
+shlomif / App-Timestamper
+ Code
+ Issues
+ Pull requests
+A command line filter to prefix lines with the timestamps of their creation.
+
+hacktoberfest
+Updated on Jul 1
+ Perl
+davorg-cpan / app-cpanmodulesite
+ Code
+ Issues
+ Pull requests
+Automatically create a GitHub Pages site for a CPAN module
+
+perl
+cpan
+hacktoberfest
+Updated on Jan 24
  Perl
 shlomif / perl-Test-RunValgrind
  Code
@@ -3098,6 +3077,67 @@ shlomif / perl-File-IsSorted
  Pull requests
 hacktoberfest
 Updated on May 13, 2022
+ Perl
+shlomif / perl-Digest-JHash
+ Code
+ Issues
+ Pull requests
+The repository for the Digest-JHash CPAN module
+
+hacktoberfest
+Updated on Nov 18, 2016
+ Perl
+davorg / tstamp
+ Code
+ Issues
+ Pull requests
+Unix filter to add timestamps to data feeds
+
+hacktoberfest
+timestamps
+unix-filter
+Updated on Aug 3, 2019
+ Perl
+shlomif / perl-file-format-crd
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Oct 17, 2020
+ Perl
+shlomif / perl-html-strip-whitespace
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Oct 7, 2020
+ Perl
+perlancar / perl-Config-IOD-Reader
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Jul 17
+ Perl
+shlomif / cmd-line-spreadsheets-toolkit
+ Code
+ Issues
+ Pull requests
+The Command Line Spreadsheets Toolkit
+
+hacktoberfest
+Updated on Aug 26
+ Perl
+davorg-cpan / genealogy-relationship
+ Code
+ Issues
+ Pull requests
+Calculate the relationship between two people
+
+perl
+cpan
+hacktoberfest
+Updated on Jan 23
  Perl
 perlancar / perl-App-SahUtils
  Code
@@ -3167,87 +3207,6 @@ shlomif / perl-Module-Format
 hacktoberfest
 Updated last month
  Perl
-JJ / IV-
- Code
- Issues
- Pull requests
-Repositorio anual para IV, instanciado para 2024-2025
-
-ci-cd
-hacktoberfest
-Updated 1 hour ago
- Perl
-shlomif / App-xspf2m3u
- Code
- Issues
- Pull requests
-Convert xspf playlists to m3u ones.
-
-mpv
-xml
-perl
-xspf
-vlc
-vlc-media-player
-hacktoberfest
-m3u
-Updated on Feb 20, 2022
- Perl
-shlomif / perl-acme-gosub
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Oct 17, 2020
- Perl
-shlomif / App-gimpgitbuild
- Code
- Issues
- Pull requests
-Build GIMP from git
-
-hacktoberfest
-Updated on Jul 8, 2023
- Perl
-shlomif / perl-Module-Format-AsHTML
- Code
- Issues
- Pull requests
-Generate HTML links to the modules on metacpan
-
-hacktoberfest
-Updated on Aug 3, 2020
- Perl
-peeyush1999 / HackerRankContestPlagChecker
- Code
- Issues
- Pull requests
-Developed a way to download submission from hackerrank and check plagrism on it
-
-hacktoberfest
-Updated on Oct 13, 2022
- Perl
-choroba / tred-ud
- Code
- Issues
- Pull requests
-TrEd Extension and Backend for Universal Dependencies
-
-nlp-parsing
-hacktoberfest
-Updated on Jul 20
- Perl
-Perl-Bitcoin / App-Bitcoin-PaperWallet
- Code
- Issues
- Pull requests
-App::Bitcoin::PaperWallet CPAN distribution
-
-bitcoin
-perl
-hacktoberfest
-Updated on Aug 25
- Perl
 manwar / Date-Julian-Simple
  Code
  Issues
@@ -3313,7 +3272,7 @@ shlomif / Queen-Padme-Tales
 Star Wars/Star Trek Crossover Comedy/Action Web Series
 
 hacktoberfest
-Updated last month
+Updated on Sep 2
  Perl
 jonasbn / bdkpst
  Code
@@ -3333,6 +3292,298 @@ shlomif / shlomif-email-signature
  Pull requests
 hacktoberfest
 Updated last week
+ Perl
+shlomif / App-intsum
+ Code
+ Issues
+ Pull requests
+Command-line Filter to sum (potentially bigint) integers.
+
+hacktoberfest
+Updated on Oct 17, 2020
+ Perl
+shlomif / App-Countdown
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Nov 23, 2022
+ Perl
+billgerrard / bing-content-api
+ Code
+ Issues
+ Pull requests
+Bing::ContentAPI -- Perl interface to Bing Ads Content API for Shopping
+
+bing
+perl
+shopping
+hacktoberfest
+bingads
+content-api
+Updated on Sep 29, 2022
+ Perl
+shlomif / Text-Hspell
+ Code
+ Issues
+ Pull requests
+Check spelling of words in Hebrew using Perl5 and libhspell
+
+hacktoberfest
+Updated on Jul 24, 2020
+ Perl
+suzicurran / ExomodPackager
+ Code
+ Issues
+ Pull requests
+📦 PowerShell-based tool to create mods for the game "I Was a Teenage Exocolonist"
+
+game
+windows
+powershell
+hacktoberfest
+modding-tools
+Updated on Oct 14, 2022
+ Perl
+davorg-cpan / audiofile-info-ogg-vorbis-header
+ Code
+ Issues
+ Pull requests
+Perl library to extract date from Ogg Vorbis files using Ogg::Vorbis::Header
+
+perl
+ogg-vorbis
+cpan
+hacktoberfest
+audiio
+Updated on Jan 23
+ Perl
+shlomif / quad-pres
+ Code
+ Issues
+ Pull requests
+html
+legacy
+presentation
+perl
+xhtml
+hacktoberfest
+wml
+Updated on Apr 6
+ Perl
+poti1 / data-trace
+ Code
+ Issues
+ Pull requests
+Trace when a data structure gets updated.
+
+perl
+perl5
+hacktoberfest
+debugging-tool
+Updated on Jun 13
+ Perl
+poti1 / subs-trace
+ Code
+ Issues
+ Pull requests
+Trace all calls in a package.
+
+perl
+perl5
+hacktoberfest
+debugging-tool
+Updated on Jun 13
+ Perl
+rabbiveesh / dbic-sqla2
+ Code
+ Issues
+ Pull requests
+Plugin for using SQLA2 with DBIC
+
+hacktoberfest
+Updated on Jun 16
+ Perl
+shlomif / perl-PDL-Lib-Linear-Solve
+ Code
+ Issues
+ Pull requests
+A PDL Distribution
+
+hacktoberfest
+Updated on Dec 28, 2019
+ Perl
+shlomif / cpanplus-dist-mdv
+ Code
+ Issues
+ Pull requests
+a cpanplus backend to build mandriva rpms
+
+hacktoberfest
+Updated on Oct 27, 2021
+ Perl
+shlomif / freecell-pro-3fc-deals--split
+ Code
+ Issues
+ Pull requests
+Freecell Pro 3 freecells impossible and intractable deals
+
+hacktoberfest
+Updated on Oct 7, 2020
+ Perl
+domm / CtrlO-Crypt-XkcdPassword
+ Code
+ Issues
+ Pull requests
+Yet another XKCD style password generator
+
+hacktoberfest
+Updated on Nov 11, 2021
+ Perl
+billgerrard / Business-OnlinePayment-iTransact
+ Code
+ Issues
+ Pull requests
+Business::OnlinePayment::iTransact - iTransact backend for Business::OnlinePayment
+
+hacktoberfest
+Updated on Jan 20, 2022
+ Perl
+perlancar / perl-Log-ger-Manual
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Jun 18, 2022
+ Perl
+shlomif / perl-file-find-object-rule
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Oct 29, 2021
+ Perl
+shlomif / perl-test-run
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Oct 22, 2020
+ Perl
+shlomif / perl-mail-lmlm
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Oct 16, 2020
+ Perl
+shlomif / perl-ipc-run-example
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Aug 22, 2019
+ Perl
+perlancar / perl-Log-ger
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Jan 12
+ Perl
+shlomif / screenplays-common
+ Code
+ Issues
+ Pull requests
+Common files for the screenplays hosted on http://www.shlomifish.org/
+
+hacktoberfest
+Updated on Oct 29, 2023
+ Perl
+reanimatedprojects / rpgcat
+ Code
+ Issues
+ Pull requests
+Catalyst based RPG framework
+
+rpg
+perl
+browser-game
+catalyst
+hacktoberfest
+Updated on Oct 13, 2020
+ Perl
+shlomif / urpmi
+ Code
+ Issues
+ Pull requests
+The Mageia Linux Software Installation and Management Tools
+
+hacktoberfest
+Updated on Apr 26, 2016
+ Perl
+shlomif / perl-math-grahamfunction
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Oct 7, 2020
+ Perl
+perlancar / perl-Games-Hangman
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Jul 17
+ Perl
+davorg-cpan / template-plugin-audiofile-info
+ Code
+ Issues
+ Pull requests
+Template Toolkit plugin for AudioFile::Info
+
+audio
+template
+perl
+cpan
+hacktoberfest
+Updated on Jan 23
+ Perl
+perlancar / perl-Data-Sah
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Feb 16
+ Perl
+shlomif / mousable
+ Code
+ Issues
+ Pull requests
+Open source AJAX commenting engine (for static web pages, etc.)
+
+hacktoberfest
+Updated on Apr 5
+ Perl
+shlomif / Sky-uploader
+ Code
+ Issues
+ Pull requests
+The Sky uploader for uploading stuff using rsync/etc. to remote web-sites, from which they can be downloaded.
+
+hacktoberfest
+Updated on Apr 4
+ Perl
+davorg-cpan / amazon-sites
+ Code
+ Issues
+ Pull requests
+Perl extension containing various useful pieces of information about Amazon web sites
+
+perl
+cpan
+hacktoberfest
+Updated 3 weeks ago
  Perl
 brummett / Devel-Chitin
  Code
@@ -3410,74 +3661,13 @@ timing
 perl-module
 perl5
 hacktoberfest
-Updated last week
+Updated 2 weeks ago
  Perl
 davorg-cpan / template-plugin-rpm2
  Code
  Issues
  Pull requests
 Template Toolkit plugin for RPM2
-
-perl
-cpan
-hacktoberfest
-Updated on Jan 23
- Perl
-shlomif / perl-Digest-JHash
- Code
- Issues
- Pull requests
-The repository for the Digest-JHash CPAN module
-
-hacktoberfest
-Updated on Nov 18, 2016
- Perl
-davorg / tstamp
- Code
- Issues
- Pull requests
-Unix filter to add timestamps to data feeds
-
-hacktoberfest
-timestamps
-unix-filter
-Updated on Aug 3, 2019
- Perl
-shlomif / perl-file-format-crd
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Oct 17, 2020
- Perl
-shlomif / perl-html-strip-whitespace
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Oct 7, 2020
- Perl
-perlancar / perl-Config-IOD-Reader
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Jul 17
- Perl
-shlomif / cmd-line-spreadsheets-toolkit
- Code
- Issues
- Pull requests
-The Command Line Spreadsheets Toolkit
-
-hacktoberfest
-Updated on Aug 26
- Perl
-davorg-cpan / genealogy-relationship
- Code
- Issues
- Pull requests
-Calculate the relationship between two people
 
 perl
 cpan
@@ -3631,93 +3821,6 @@ cpan
 hacktoberfest
 Updated 2 weeks ago
  Perl
-shlomif / perl-PDL-Lib-Linear-Solve
- Code
- Issues
- Pull requests
-A PDL Distribution
-
-hacktoberfest
-Updated on Dec 28, 2019
- Perl
-shlomif / cpanplus-dist-mdv
- Code
- Issues
- Pull requests
-a cpanplus backend to build mandriva rpms
-
-hacktoberfest
-Updated on Oct 27, 2021
- Perl
-shlomif / freecell-pro-3fc-deals--split
- Code
- Issues
- Pull requests
-Freecell Pro 3 freecells impossible and intractable deals
-
-hacktoberfest
-Updated on Oct 7, 2020
- Perl
-domm / CtrlO-Crypt-XkcdPassword
- Code
- Issues
- Pull requests
-Yet another XKCD style password generator
-
-hacktoberfest
-Updated on Nov 11, 2021
- Perl
-billgerrard / Business-OnlinePayment-iTransact
- Code
- Issues
- Pull requests
-Business::OnlinePayment::iTransact - iTransact backend for Business::OnlinePayment
-
-hacktoberfest
-Updated on Jan 20, 2022
- Perl
-perlancar / perl-Log-ger-Manual
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Jun 18, 2022
- Perl
-shlomif / perl-file-find-object-rule
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Oct 29, 2021
- Perl
-shlomif / perl-test-run
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Oct 22, 2020
- Perl
-shlomif / perl-mail-lmlm
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Oct 16, 2020
- Perl
-shlomif / perl-ipc-run-example
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Aug 22, 2019
- Perl
-perlancar / perl-Log-ger
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Jan 12
- Perl
 cebjyre / Test-ConsistentVersion
  Code
  Issues
@@ -3824,116 +3927,166 @@ Interface to validate UK bank account.
 hacktoberfest
 Updated on Aug 16
  Perl
-shlomif / App-intsum
+bbrtj / perl-algorithm-quadtree-xs
  Code
  Issues
  Pull requests
-Command-line Filter to sum (potentially bigint) integers.
+XS backend for Algorithm::QuadTree
 
-hacktoberfest
-Updated on Oct 17, 2020
- Perl
-shlomif / App-Countdown
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Nov 23, 2022
- Perl
-billgerrard / bing-content-api
- Code
- Issues
- Pull requests
-Bing::ContentAPI -- Perl interface to Bing Ads Content API for Shopping
-
-bing
+algorithms
 perl
-shopping
 hacktoberfest
-bingads
-content-api
-Updated on Sep 29, 2022
+Updated 2 weeks ago
  Perl
-shlomif / Text-Hspell
+reneeb / Algorithm-Diff-HTMLTable
  Code
  Issues
  Pull requests
-Check spelling of words in Hebrew using Perl5 and libhspell
+diff
+hacktoberfest
+Updated on Jun 27, 2021
+ Perl
+domm / Measure-Everything-Adapter-InfluxDB-Direct
+ Code
+ Issues
+ Pull requests
+Send stats directly to InfluxDB via http
 
 hacktoberfest
-Updated on Jul 24, 2020
+Updated on May 25
  Perl
-suzicurran / ExomodPackager
+shlomif / shlomif-business-card
  Code
  Issues
  Pull requests
-📦 PowerShell-based tool to create mods for the game "I Was a Teenage Exocolonist"
+Repository for the Inkscape Image Holding my Business Card
 
-game
-windows
-powershell
 hacktoberfest
-modding-tools
-Updated on Oct 14, 2022
+Updated on Apr 7, 2022
  Perl
-davorg-cpan / audiofile-info-ogg-vorbis-header
+jonasbn / pcplrsb
  Code
  Issues
  Pull requests
-Perl library to extract date from Ogg Vorbis files using Ogg::Vorbis::Header
+Perl::Critic::Policy::logicLAB::RequireSheBang - simple policy for keeping your shebang line uniform
 
 perl
-ogg-vorbis
+policy
+perl5
+hacktoberfest
+perl-critic
+Updated on May 18, 2021
+ Perl
+shlomif / coins-weight-sums-permutation
+ Code
+ Issues
+ Pull requests
+Permutations of the sums of coins demo for someone on Freenode.
+
+hacktoberfest
+Updated on Mar 25, 2014
+ Perl
+perlancar / perl-App-ChromeUtils
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Oct 7, 2022
+ Perl
+simbabque / Test-WWW-Mechanize-Catalyst-WithContext
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Feb 26, 2020
+ Perl
+kyzn / Dist-Zilla-Plugin-ContributorCovenant
+ Code
+ Issues
+ Pull requests
+Add Contributor Covenant as Code of Conduct
+
+covenant
+perl
 cpan
 hacktoberfest
-audiio
-Updated on Jan 23
+Updated on Jun 13, 2020
  Perl
-shlomif / quad-pres
+perlancar / perl-ScriptX
  Code
  Issues
  Pull requests
-html
-legacy
-presentation
-perl
-xhtml
-hacktoberfest
-wml
-Updated on Apr 6
- Perl
-poti1 / data-trace
- Code
- Issues
- Pull requests
-Trace when a data structure gets updated.
+(No description)
 
+hacktoberfest
+hacktoberfest2021
+Updated on Oct 13, 2021
+ Perl
+perlancar / perl-App-FirefoxUtils
+ Code
+ Issues
+ Pull requests
+(No description)
+
+hacktoberfest
+Updated on Oct 1, 2021
+ Perl
+sharyanto / perl-URI-Info
+ Code
+ Issues
+ Pull requests
+(No description)
+
+hacktoberfest
+hacktoberfest2021
+Updated on Oct 7, 2021
+ Perl
+jonasbn / tjenkins
+ Code
+ Issues
+ Pull requests
+Task::Jenkins - collection of distributions for continuous integration using Jenkins
+
+jenkins
 perl
 perl5
 hacktoberfest
-debugging-tool
-Updated on Jun 13
+Updated on Dec 22, 2023
  Perl
-poti1 / subs-trace
+Kelp-framework / Module-Redis
  Code
  Issues
  Pull requests
-Trace all calls in a package.
+Redis module for Kelp
 
 perl
-perl5
 hacktoberfest
-debugging-tool
-Updated on Jun 13
+perl-kelp
+Updated on May 1, 2013
  Perl
-rabbiveesh / dbic-sqla2
+mikkoi / env-dot
  Code
  Issues
  Pull requests
-Plugin for using SQLA2 with DBIC
+Read environment variables from .env file.
 
+bash
+perl
+environment-variables
+perl-module
+perl-script
 hacktoberfest
-Updated on Jun 16
+Updated 5 days ago
+ Perl
+mikkoi / Dancer2-Plugin-JobScheduler
+ Code
+ Issues
+ Pull requests
+Plugin for Dancer2 webapp to send and query jobs in different job schedulers
+
+perl-module
+hacktoberfest
+Updated on Mar 24
  Perl
 shlomif / possible-perl-d-bug-via-ProjectEuler377
  Code
@@ -4132,873 +4285,6 @@ perl-module
 hacktoberfest
 Updated on Dec 25, 2023
  Perl
-reneeb / Algorithm-Diff-HTMLTable
- Code
- Issues
- Pull requests
-diff
-hacktoberfest
-Updated on Jun 27, 2021
- Perl
-domm / Measure-Everything-Adapter-InfluxDB-Direct
- Code
- Issues
- Pull requests
-Send stats directly to InfluxDB via http
-
-hacktoberfest
-Updated on May 25
- Perl
-shlomif / shlomif-business-card
- Code
- Issues
- Pull requests
-Repository for the Inkscape Image Holding my Business Card
-
-hacktoberfest
-Updated on Apr 7, 2022
- Perl
-jonasbn / pcplrsb
- Code
- Issues
- Pull requests
-Perl::Critic::Policy::logicLAB::RequireSheBang - simple policy for keeping your shebang line uniform
-
-perl
-policy
-perl5
-hacktoberfest
-perl-critic
-Updated on May 18, 2021
- Perl
-shlomif / coins-weight-sums-permutation
- Code
- Issues
- Pull requests
-Permutations of the sums of coins demo for someone on Freenode.
-
-hacktoberfest
-Updated on Mar 25, 2014
- Perl
-perlancar / perl-App-ChromeUtils
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Oct 7, 2022
- Perl
-simbabque / Test-WWW-Mechanize-Catalyst-WithContext
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Feb 26, 2020
- Perl
-kyzn / Dist-Zilla-Plugin-ContributorCovenant
- Code
- Issues
- Pull requests
-Add Contributor Covenant as Code of Conduct
-
-covenant
-perl
-cpan
-hacktoberfest
-Updated on Jun 13, 2020
- Perl
-perlancar / perl-ScriptX
- Code
- Issues
- Pull requests
-(No description)
-
-hacktoberfest
-hacktoberfest2021
-Updated on Oct 13, 2021
- Perl
-perlancar / perl-App-FirefoxUtils
- Code
- Issues
- Pull requests
-(No description)
-
-hacktoberfest
-Updated on Oct 1, 2021
- Perl
-sharyanto / perl-URI-Info
- Code
- Issues
- Pull requests
-(No description)
-
-hacktoberfest
-hacktoberfest2021
-Updated on Oct 7, 2021
- Perl
-jonasbn / tjenkins
- Code
- Issues
- Pull requests
-Task::Jenkins - collection of distributions for continuous integration using Jenkins
-
-jenkins
-perl
-perl5
-hacktoberfest
-Updated on Dec 22, 2023
- Perl
-Kelp-framework / Module-Redis
- Code
- Issues
- Pull requests
-Redis module for Kelp
-
-perl
-hacktoberfest
-perl-kelp
-Updated on May 1, 2013
- Perl
-mikkoi / env-dot
- Code
- Issues
- Pull requests
-Read environment variables from .env file.
-
-bash
-perl
-environment-variables
-perl-module
-perl-script
-hacktoberfest
-Updated 3 days ago
- Perl
-mikkoi / Dancer2-Plugin-JobScheduler
- Code
- Issues
- Pull requests
-Plugin for Dancer2 webapp to send and query jobs in different job schedulers
-
-perl-module
-hacktoberfest
-Updated on Mar 24
- Perl
-perlancar / perl-Ledger-Parser
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Jul 11, 2019
- Perl
-shlomif / TO_DEL--Text-CSV-Problem
- Code
- Issues
- Pull requests
-On Freenode IRC - repository.
-
-hacktoberfest
-Updated on Mar 4, 2014
- Perl
-shlomif / Perl-Quiz-of-the-Whatever
- Code
- Issues
- Pull requests
-Solutions and code for the Perl Quiz-of-the-Whatever quizzes by Shlomi Fish
-
-hacktoberfest
-Updated on Apr 16, 2015
- Perl
-perlancar / perl-Sys-RunAlone-Flexible
- Code
- Issues
- Pull requests
-(No description)
-
-hacktoberfest
-Updated on Sep 3, 2019
- Perl
-defcon201 / real-world-onion-sites
- Code
- Issues
- Pull requests
-An index of the non-dark web...
-
-hacktoberfest
-Updated on Aug 25, 2018
- Perl
-shlomif / perl-cgi-application-netnewsiface
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Aug 24, 2019
- Perl
-shlomif / doodle
- Code
- Issues
- Pull requests
-Database DDL Statement Builder
-
-hacktoberfest
-Updated on Aug 21, 2019
- Perl
-shlomif / mikmod-test-suite
- Code
- Issues
- Pull requests
-MikMod's test suite
-
-hacktoberfest
-Updated on Apr 12, 2020
- Perl
-2021202015 / HackerRankContestPlagChecker
- Code
- Issues
- Pull requests
-Developed a way to download submission from hackerrank and check plagrism on it
-
-hacktoberfest
-hacktoberfest2022
-Updated on Oct 13, 2022
- Perl
-jonasbn / perl-critic-policy-regularexpressions-requiredefault
- Code
- Issues
- Pull requests
-Perl::Critic policy for warning when not using /a or /aa in regular expressions
-
-perl
-policy
-perl5
-hacktoberfest
-perl-critic
-Updated on Aug 13
- Perl
-jonasbn / somafm-currently-playing
- Code
- Issues
- Pull requests
-A basic webscraper to fetch currently playing track from a given station
-
-somafm
-scraper
-perl
-hacktoberfest
-Updated 3 weeks ago
- Perl
-jonasbn / perl-business-fo-postalcode
- Code
- Issues
- Pull requests
-Validation of Faroese postal codes
-
-distribution
-validation
-perl
-perl5
-cpan
-hacktoberfest
-Updated 2 weeks ago
- Perl
-jonasbn / bdkpo
- Code
- Issues
- Pull requests
-Business::DK::PO - Danish postal order code generator/validator
-
-validation
-perl
-perl5
-hacktoberfest
-Updated 2 weeks ago
- Perl
-jonasbn / perl-critic-logiclab
- Code
- Issues
- Pull requests
-Perl::Critic::logicLAB - a set of Perl::Critic policies implemented and used by logicLAB
-
-perl
-perl5
-hacktoberfest
-perl-critic
-Updated last week
- Perl
-WyriHaximus / php5-fpm-munin-plugins
- Code
- Issues
- Pull requests
-A set of Munin plugins for PHP5-FPM
-
-hacktoberfest
-Updated on May 1
- Perl
-shlomif / Freecell-4fc-solving-logs
- Code
- Issues
- Pull requests
-Solving logs for Freecell with 4 freecells. From 100 million onwards.
-
-hacktoberfest
-Updated on Aug 4, 2019
- Perl
-perlancar / perl-Complete
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Aug 2, 2021
- Perl
-jonasbn / bdkfi
- Code
- Issues
- Pull requests
-Business::DK::FI - validation of Danish FI numbers
-
-perl
-perl5
-hacktoberfest
-Updated on Sep 25, 2019
- Perl
-shlomif / perl-Test-HTML-Recursive-DeprecatedTags
- Code
- Issues
- Pull requests
-Check for deprecated HTML elements.
-
-hacktoberfest
-Updated on Oct 20, 2020
- Perl
-domm / Plack-Middleware-PrettyException
- Code
- Issues
- Pull requests
-Capture exceptions and present them as HTML or JSON
-
-psgi
-plack
-hacktoberfest
-Updated on Oct 21, 2022
- Perl
-domm / App-TimeTracker-RT
- Code
- Issues
- Pull requests
-App::TimeTracker RT (Request Tracker) plugin
-
-hacktoberfest
-Updated on Feb 5, 2021
- Perl
-shlomif / perl5-xs-guide
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Aug 23, 2019
- Perl
-shlomif / gimp-test-suite
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Apr 12, 2020
- Perl
-shlomif / XML-LibXML-Iterator
- Code
- Issues
- Pull requests
-https://metacpan.org/pod/XML::LibXML::Iterator
-
-hacktoberfest
-Updated on Oct 20, 2020
- Perl
-shlomif / perl-Code-TidyAll-Plugin-TestCount
- Code
- Issues
- Pull requests
-Test-Count plugin for Code-TidyAll
-
-hacktoberfest
-Updated on Oct 20, 2020
- Perl
-shlomif / riddle-not-a-not-b-not-c
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Aug 23, 2019
- Perl
-shlomif / perl-parser-mgc-hg
- Code
- Issues
- Pull requests
-Git fork of Parser::MGC
-
-hacktoberfest
-Updated on Apr 12, 2020
- Perl
-perlancar / perl-App-GoogleSearchUtils
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Jul 17
- Perl
-shlomif / web-cpan-site
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Apr 5
- Perl
-os-autoinst / os-autoinst-common
- Code
- Issues
- Pull requests
-Common helpers for os-autoinst and openQA development
-
-hacktoberfest
-Updated 2 weeks ago
- Perl
-bbrtj / perl-app-hl7-compare
- Code
- Issues
- Pull requests
-Perl distribution for comparing HL7 messages against one another
-
-perl
-hl7
-hacktoberfest
-Updated on Jun 11
- Perl
-shlomif / perl-Object-Declare
- Code
- Issues
- Pull requests
-The Object::Declare CPAN Distribution - originally by Audrey Tang (AUDREYT)
-
-hacktoberfest
-Updated on Oct 18, 2020
- Perl
-mikkoi / git-morehooks
- Code
- Issues
- Pull requests
-More hooks for Perl package Git::Hooks
-
-perl
-perl-module
-hacktoberfest
-perl5-module
-Updated on Dec 20, 2022
- Perl
-perlancar / perl-Perinci-CmdLine-Classic
- Code
- Issues
- Pull requests
-hacktoberfest
-hacktoberfest2021
-Updated on Oct 30, 2023
- Perl
-shlomif / paste.debian.net-paste.pl
- Code
- Issues
- Pull requests
-The code that powers paste.debian.net
-
-hacktoberfest
-Updated on Jul 4, 2016
- Perl
-shlomif / Text-WrapAsUtf8
- Code
- Issues
- Pull requests
-Wrap output in the UTF-8 layer
-
-hacktoberfest
-Updated on Sep 22, 2020
- Perl
-shlomif / perl-App-Gezer
- Code
- Issues
- Pull requests
-HTML postprocessor and minifier
-
-hacktoberfest
-Updated on Oct 13, 2020
- Perl
-alyssa021 / CTab
- Code
- Issues
- Pull requests
-Check if the file contains Tab character
-
-hacktoberfest
-Updated on Oct 27, 2020
- Perl
-shlomif / perl-io-socket-inet6
- Code
- Issues
- Pull requests
-cpan
-
-hacktoberfest
-Updated on Dec 10, 2021
- Perl
-perlancar / perl-Log-ger-Screen
- Code
- Issues
- Pull requests
-(No description)
-
-hacktoberfest
-hacktoberfest2021
-Updated on Feb 18, 2022
- Perl
-perlancar / perl-App-FfmpegUtils
- Code
- Issues
- Pull requests
-(No description)
-
-hacktoberfest
-Updated last week
- Perl
-niklasdoerfler / squeezebox-media-server-docker
- Code
- Issues
- Pull requests
-docker
-hacktoberfest
-Updated on Aug 5, 2023
- Perl
-perlancar / perl-App-BPOMUtils
- Code
- Issues
- Pull requests
-(No description)
-
-hacktoberfest
-Updated on Dec 20, 2022
- Perl
-perlancar / perl-ArrayData
- Code
- Issues
- Pull requests
-(No description)
-
-hacktoberfest
-hacktoberfest2021
-Updated on Jan 16
- Perl
-perlancar / perl-Rinci
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Jan 12
- Perl
-jonasbn / pcplrpv
- Code
- Issues
- Pull requests
-Perl::Critic::Policy::logicLAB::RequireParamsValidate
-
-perl
-policy
-perl5
-hacktoberfest
-perl-critic
-Updated on Jan 3
- Perl
-Kelp-framework / Extension-Hooks
- Code
- Issues
- Pull requests
-Method hooks for Kelp
-
-perl
-hacktoberfest
-perl-kelp
-Updated on Jun 24
- Perl
-Kelp-framework / Module-Template-Xslate
- Code
- Issues
- Pull requests
-Text::Xslate adapter for Kelp
-
-perl
-hacktoberfest
-perl-kelp
-Updated on Jan 29, 2019
- Perl
-jonasbn / perl-date-holidays-super
- Code
- Issues
- Pull requests
-Release history of Date-Holidays-Super
-
-perl
-perl5
-cpan
-hacktoberfest
-date-holidays
-Updated on Aug 23
- Perl
-domm / Bread-Runner
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Apr 4, 2021
- Perl
-shlomif / www-search-backends
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Jan 14, 2020
- Perl
-shlomif / putting-more-cards-on-the-table-2014
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Sep 4, 2019
- Perl
-domm / Net-Matrix-Webhook
- Code
- Issues
- Pull requests
-A http->matrix webhook
-
-matrix
-hacktoberfest
-Updated on Jan 3, 2021
- Perl
-shlomif / Tac_n
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Sep 5, 2021
- Perl
-rishidhamija / perlyswitch
- Code
- Issues
- Pull requests
-Switch case games with perl
-
-hacktoberfest
-hacktoberfest2020
-Updated on Oct 19, 2020
- Perl
-choroba / xsh
- Code
- Issues
- Pull requests
-XML Editing Shell
-
-interactive
-xml
-perl5
-hacktoberfest
-libxml2
-Updated on Dec 27, 2023
- Perl
-shlomif / Dist-Zilla-Plugin-Test-TrailingSpace
- Code
- Issues
- Pull requests
-Dist-Zilla plugin to test for trailing whitespace in source code lines.
-
-hacktoberfest
-Updated on Apr 7
- Perl
-perlancar / perl-App-td
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Jun 26
- Perl
-kyzn / eksimail
- Code
- Issues
- Pull requests
-Download, merge & deliver lists of entries from eksisozluk.com
-
-perl
-eksisozluk
-perl-script
-hacktoberfest
-Updated on Jun 27, 2020
- Perl
-Kelp-framework / Whelk
- Code
- Issues
- Pull requests
-A friendly API framework
-
-rest-api
-perl
-webframework
-hacktoberfest
-perl-kelp
-Updated 3 weeks ago
- Perl
-mikkoi / git-mailmap
- Code
- Issues
- Pull requests
-perl
-perl-module
-hacktoberfest
-Updated on Mar 19, 2019
- Perl
-shlomif / perl-Spork-Shlomify
- Code
- Issues
- Pull requests
-The Spork::Shlomify CPAN Distribution.
-
-hacktoberfest
-Updated on Oct 7, 2020
- Perl
-domm / App-TimeTracker-Category
- Code
- Issues
- Pull requests
-use categories when tracking time with App::TimeTracker
-
-timetracker
-hacktoberfest
-Updated on May 1, 2022
- Perl
-Firesphere / pdmd-spectest
- Code
- Issues
- Pull requests
-Check how well a particular markdown implementation agrees with pandoc output.
-
-hacktoberfest
-Updated on Oct 27, 2012
- Perl
-shlomif / socialmap
- Code
- Issues
- Pull requests
-Insurgent's Software old socialmap code
-
-hacktoberfest
-Updated on Dec 18, 2012
- Perl
-domm / Web-Request-Role-JSON
- Code
- Issues
- Pull requests
-Make handling JSON easier in Web::Request
-
-hacktoberfest
-Updated on Apr 4, 2021
- Perl
-shlomif / perl-svn-pusher
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Jul 22, 2023
- Perl
-bluet / change-password-at-once
- Code
- Issues
- Pull requests
-Change password on many servers at once
-
-server
-cluster
-management
-password
-hacktoberfest
-Updated on Jun 24, 2019
- Perl
-davorg / tw2fa
- Code
- Issues
- Pull requests
-Convert TransferWise CSVs into a format that FreeAgent recognises
-
-hacktoberfest
-Updated on Sep 1, 2023
- Perl
-perlancar / perl-App-TextTableUtils
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Dec 3, 2023
- Perl
-davorg / towerbridge
- Code
- Issues
- Pull requests
-When is Tower Bridge lifting?
-
-data
-perl
-web-scraping
-hacktoberfest
-london
-Updated on Aug 16
- Perl
-kyzn / WWW-Eksi
- Code
- Issues
- Pull requests
-WWW::Eksi - Interface for Eksisozluk.com
-
-perl
-eksisozluk
-perl5
-cpan
-hacktoberfest
-Updated on Jun 13, 2020
- Perl
-jonasbn / perl-date-holidays-abstract
- Code
- Issues
- Pull requests
-Release history of Date-Holidays-Abstract
-
-perl
-perl5
-cpan
-hacktoberfest
-date-holidays
-Updated on Aug 23
- Perl
-Kelp-framework / Module-Config-YAML
- Code
- Issues
- Pull requests
-Configure Kelp in YAML
-
-perl
-hacktoberfest
-perl-kelp
-Updated on Jun 25
- Perl
-davorg-cpan / feed-find
- Code
- Issues
- Pull requests
-Release history of Feed-Find
-
-perl
-cpan
-hacktoberfest
-Updated on Jan 23
- Perl
 perlancar / perl-App-WordListUtils
  Code
  Issues
@@ -5109,17 +4395,6 @@ hacktoberfest
 hacktoberfest2021
 Updated on Jan 22
  Perl
-Perl-Bitcoin / Bitcoin-Secp256k1
- Code
- Issues
- Pull requests
-Bitcoin::Secp256k1 CPAN distribution
-
-bitcoin
-perl
-hacktoberfest
-Updated 5 days ago
- Perl
 davorg-cpan / app-laststats
  Code
  Issues
@@ -5130,6 +4405,17 @@ perl
 cpan
 hacktoberfest
 Updated on Aug 29
+ Perl
+Perl-Bitcoin / Bitcoin-Secp256k1
+ Code
+ Issues
+ Pull requests
+Bitcoin::Secp256k1 CPAN distribution
+
+bitcoin
+perl
+hacktoberfest
+Updated last week
  Perl
 davorg-cpan / plack-app-directoryindex
  Code
@@ -5142,343 +4428,423 @@ cpan
 hacktoberfest
 Updated on Jan 23
  Perl
-choroba / Acme-Array-MaxSize
+shlomif / perl-Object-Declare
  Code
  Issues
  Pull requests
+The Object::Declare CPAN Distribution - originally by Audrey Tang (AUDREYT)
+
+hacktoberfest
+Updated on Oct 18, 2020
+ Perl
+mikkoi / git-morehooks
+ Code
+ Issues
+ Pull requests
+More hooks for Perl package Git::Hooks
+
+perl
+perl-module
+hacktoberfest
+perl5-module
+Updated on Dec 20, 2022
+ Perl
+perlancar / perl-Perinci-CmdLine-Classic
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+hacktoberfest2021
+Updated on Oct 30, 2023
+ Perl
+shlomif / paste.debian.net-paste.pl
+ Code
+ Issues
+ Pull requests
+The code that powers paste.debian.net
+
+hacktoberfest
+Updated on Jul 4, 2016
+ Perl
+shlomif / Text-WrapAsUtf8
+ Code
+ Issues
+ Pull requests
+Wrap output in the UTF-8 layer
+
+hacktoberfest
+Updated on Sep 22, 2020
+ Perl
+shlomif / perl-App-Gezer
+ Code
+ Issues
+ Pull requests
+HTML postprocessor and minifier
+
+hacktoberfest
+Updated on Oct 13, 2020
+ Perl
+alyssa021 / CTab
+ Code
+ Issues
+ Pull requests
+Check if the file contains Tab character
+
+hacktoberfest
+Updated on Oct 27, 2020
+ Perl
+shlomif / perl-io-socket-inet6
+ Code
+ Issues
+ Pull requests
+cpan
+
+hacktoberfest
+Updated on Dec 10, 2021
+ Perl
+perlancar / perl-Log-ger-Screen
+ Code
+ Issues
+ Pull requests
+(No description)
+
+hacktoberfest
+hacktoberfest2021
+Updated on Feb 18, 2022
+ Perl
+perlancar / perl-App-FfmpegUtils
+ Code
+ Issues
+ Pull requests
+(No description)
+
+hacktoberfest
+Updated 2 weeks ago
+ Perl
+niklasdoerfler / squeezebox-media-server-docker
+ Code
+ Issues
+ Pull requests
+docker
+hacktoberfest
+Updated on Aug 5, 2023
+ Perl
+perlancar / perl-App-BPOMUtils
+ Code
+ Issues
+ Pull requests
+(No description)
+
+hacktoberfest
+Updated on Dec 20, 2022
+ Perl
+perlancar / perl-ArrayData
+ Code
+ Issues
+ Pull requests
+(No description)
+
+hacktoberfest
+hacktoberfest2021
+Updated on Jan 16
+ Perl
+perlancar / perl-Rinci
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Jan 12
+ Perl
+jonasbn / pcplrpv
+ Code
+ Issues
+ Pull requests
+Perl::Critic::Policy::logicLAB::RequireParamsValidate
+
+perl
+policy
 perl5
 hacktoberfest
-Updated on Jun 1, 2022
+perl-critic
+Updated on Jan 3
  Perl
-shlomif / perl-Test-WWW-Mechanize-LibXML
+Kelp-framework / Extension-Hooks
  Code
  Issues
  Pull requests
-The Test::WWW::Mechanize::LibXML CPAN module
+Method hooks for Kelp
+
+perl
+hacktoberfest
+perl-kelp
+Updated on Jun 24
+ Perl
+Kelp-framework / Module-Template-Xslate
+ Code
+ Issues
+ Pull requests
+Text::Xslate adapter for Kelp
+
+perl
+hacktoberfest
+perl-kelp
+Updated on Jan 29, 2019
+ Perl
+jonasbn / perl-date-holidays-super
+ Code
+ Issues
+ Pull requests
+Release history of Date-Holidays-Super
+
+perl
+perl5
+cpan
+hacktoberfest
+date-holidays
+Updated on Aug 23
+ Perl
+perlancar / perl-Ledger-Parser
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Jul 11, 2019
+ Perl
+shlomif / TO_DEL--Text-CSV-Problem
+ Code
+ Issues
+ Pull requests
+On Freenode IRC - repository.
 
 hacktoberfest
-Updated on Oct 22, 2020
+Updated on Mar 4, 2014
  Perl
-shlomif / maths--riddles
+shlomif / Perl-Quiz-of-the-Whatever
  Code
  Issues
  Pull requests
-Maths riddles as collected by Shlomi Fish
+Solutions and code for the Perl Quiz-of-the-Whatever quizzes by Shlomi Fish
 
 hacktoberfest
-Updated on Nov 26, 2017
+Updated on Apr 16, 2015
  Perl
-shlomif / perl-Dist-Zilla-Plugin-TestRun
+perlancar / perl-Sys-RunAlone-Flexible
  Code
  Issues
  Pull requests
-Dist::Zilla Plugin to run tests using "./Build runtest"/etc.
+(No description)
 
 hacktoberfest
-Updated on Oct 22, 2020
+Updated on Sep 3, 2019
  Perl
-choroba / template-plugin-tallymarks
+defcon201 / real-world-onion-sites
  Code
  Issues
  Pull requests
-Template filter to convert numbers to tally marks
+An index of the non-dark web...
 
-template
+hacktoberfest
+Updated on Aug 25, 2018
+ Perl
+shlomif / perl-cgi-application-netnewsiface
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Aug 24, 2019
+ Perl
+shlomif / doodle
+ Code
+ Issues
+ Pull requests
+Database DDL Statement Builder
+
+hacktoberfest
+Updated on Aug 21, 2019
+ Perl
+shlomif / mikmod-test-suite
+ Code
+ Issues
+ Pull requests
+MikMod's test suite
+
+hacktoberfest
+Updated on Apr 12, 2020
+ Perl
+2021202015 / HackerRankContestPlagChecker
+ Code
+ Issues
+ Pull requests
+Developed a way to download submission from hackerrank and check plagrism on it
+
+hacktoberfest
+hacktoberfest2022
+Updated on Oct 13, 2022
+ Perl
+jonasbn / perl-critic-policy-regularexpressions-requiredefault
+ Code
+ Issues
+ Pull requests
+Perl::Critic policy for warning when not using /a or /aa in regular expressions
+
+perl
+policy
 perl5
 hacktoberfest
-Updated on Jun 1, 2022
+perl-critic
+Updated on Aug 13
  Perl
-shlomif / spark
+jonasbn / perl-business-fo-postalcode
+ Code
+ Issues
+ Pull requests
+Validation of Faroese postal codes
+
+distribution
+validation
+perl
+perl5
+cpan
+hacktoberfest
+Updated 2 weeks ago
+ Perl
+jonasbn / bdkpo
+ Code
+ Issues
+ Pull requests
+Business::DK::PO - Danish postal order code generator/validator
+
+validation
+perl
+perl5
+hacktoberfest
+Updated 2 weeks ago
+ Perl
+jonasbn / perl-critic-logiclab
+ Code
+ Issues
+ Pull requests
+Perl::Critic::logicLAB - a set of Perl::Critic policies implemented and used by logicLAB
+
+perl
+perl5
+hacktoberfest
+perl-critic
+Updated last week
+ Perl
+jonasbn / somafm-currently-playing
+ Code
+ Issues
+ Pull requests
+A basic webscraper to fetch currently playing track from a given station
+
+somafm
+scraper
+perl
+hacktoberfest
+Updated 2 days ago
+ Perl
+domm / Bread-Runner
  Code
  Issues
  Pull requests
 hacktoberfest
-Updated on Aug 27, 2019
+Updated on Apr 4, 2021
  Perl
-NamrataPatel1294 / perlyswitch
+shlomif / www-search-backends
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Jan 14, 2020
+ Perl
+shlomif / putting-more-cards-on-the-table-2014
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Sep 4, 2019
+ Perl
+domm / Net-Matrix-Webhook
+ Code
+ Issues
+ Pull requests
+A http->matrix webhook
+
+matrix
+hacktoberfest
+Updated on Jan 3, 2021
+ Perl
+shlomif / Tac_n
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Sep 5, 2021
+ Perl
+rishidhamija / perlyswitch
  Code
  Issues
  Pull requests
 Switch case games with perl
 
 hacktoberfest
+hacktoberfest2020
 Updated on Oct 19, 2020
  Perl
-perlancar / perl-Array-Iterator
+choroba / xsh
  Code
  Issues
  Pull requests
-hacktoberfest
-Updated on Nov 21, 2023
- Perl
-perlancar / perl-App-ThisDist
- Code
- Issues
- Pull requests
-(No description)
+XML Editing Shell
 
-hacktoberfest
-Updated on Jan 5
- Perl
-perlancar / perl-WWW-PAUSE-Simple
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Feb 18
- Perl
-Perl-Bitcoin / Alien-libsecp256k1
- Code
- Issues
- Pull requests
-Alien::libsecp256k1 CPAN distribution
-
-bitcoin
-perl
-cpan
-hacktoberfest
-Updated 2 weeks ago
- Perl
-jonasbn / perl-critic-policy-inputoutput-prohibithighprecedentlogicaloperatorerrorhandling
- Code
- Issues
- Pull requests
-Perl::Critic policy, prohibiting logical error handling in open statements
-
-perl
-bug
-policy
+interactive
+xml
 perl5
 hacktoberfest
-perl-critic
-Updated last week
+libxml2
+Updated on Dec 27, 2023
  Perl
-shlomif / perl5-Time-HiRes-perl-d-segfault
+shlomif / Dist-Zilla-Plugin-Test-TrailingSpace
  Code
  Issues
  Pull requests
-Time::HiRes causes a perl -d segfault - code originally by "KES"
+Dist-Zilla plugin to test for trailing whitespace in source code lines.
 
 hacktoberfest
-Updated on Dec 7, 2015
+Updated on Apr 7
  Perl
-moose / Sub-Quote
- Code
- Issues
- Pull requests
-Efficient generation of subroutines via string eval
-
-hacktoberfest
-moo
-string-eval
-Updated on Mar 28, 2023
- Perl
-domm / Measure-Everything-Adapter-InfluxDB-TCP
+perlancar / perl-App-td
  Code
  Issues
  Pull requests
 hacktoberfest
-Updated on Dec 25, 2023
+Updated on Jun 26
  Perl
-perlancar / perl-Perinci-CmdLine-Any
+kyzn / eksimail
  Code
  Issues
  Pull requests
-hacktoberfest
-Updated on Dec 11, 2021
- Perl
-perlancar / perl-Perinci-Sub-XCompletion
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Nov 27, 2022
- Perl
-shlomif / perl-Test-Data-Split
- Code
- Issues
- Pull requests
-Split data-driven tests into individual test scripts.
-
-hacktoberfest
-Updated on Oct 24, 2020
- Perl
-shlomif / Term-Shell
- Code
- Issues
- Pull requests
-Release history of Term-Shell
-
-hacktoberfest
-Updated on Oct 21, 2021
- Perl
-shlomif / split-module-music-file-into-channel-WAVs
- Code
- Issues
- Pull requests
-Split a module music file into individual channel WAVs.
-
-hacktoberfest
-Updated on Mar 31, 2014
- Perl
-perlancar / perl-DBIx-CSV
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Aug 2, 2021
- Perl
-domm / App-TimeTracker-Git
- Code
- Issues
- Pull requests
-App::TimeTracker Git plugin
-
-timetracker
-hacktoberfest
-Updated on Jun 16, 2019
- Perl
-davorg / pinboard
- Code
- Issues
- Pull requests
-Stuff for interacting with Pinboard.in
-
-pinboard
-perl
-hacktoberfest
-Updated on Jun 18, 2019
- Perl
-shlomif / perl-catalyst-plugin-sanitizeurl
- Code
- Issues
- Pull requests
-catalyst url trailing slash plugin
-
-hacktoberfest
-Updated on Apr 12, 2020
- Perl
-giterlizzi / perl-Net-OpenVAS
- Code
- Issues
- Pull requests
-Net::OpenVAS - Perl interface for OpenVAS - Open Vulnerability Assessment Scanner
-
-scanner
-perl
-openvas
-hacktoberfest
-vulnerability-assessment
-modern-perl
-Updated on Jan 19, 2021
- Perl
-perlancar / perl-WordLists-EN-CommonException
- Code
- Issues
- Pull requests
-(No description)
-
-hacktoberfest
-Updated on Oct 4, 2020
- Perl
-shlomif / perl-File-TreeCreate
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Aug 26, 2021
- Perl
-simplton / purple_base
- Code
- Issues
- Pull requests
-hacktoberfest
-hacktoberfest2022
-Updated on Oct 12, 2022
- Perl
-domm / Plack-App-ServiceStatus
- Code
- Issues
- Pull requests
-Check and report status of various services needed by your plack app
-
-psgi
-plack
-hacktoberfest
-Updated on Jan 25
- Perl
-davorg / cookingvinyl
- Code
- Issues
- Pull requests
-Web site with info about Cooking Vinyl records
-
-music
-data
-perl
-hacktoberfest
-cooking-vinyl
-Updated on Jun 14
- Perl
-jonasbn / perl-business-dk-cvr
- Code
- Issues
- Pull requests
-Business::DK::CVR - Danish CVR (VAT Registration) code generator/validator
-
-distribution
-validation
-generator
-perl
-validator
-denmark
-perl5
-vat
-hacktoberfest
-cvr
-business-dk-cvr
-Updated 2 weeks ago
- Perl
-jonasbn / perl-business-dk-cpr
- Code
- Issues
- Pull requests
-Business::DK::CPR - Danish CPR (SSN) code generator/validator
-
-distribution
-validation
-generator
-validator
-denmark
-perl5
-hacktoberfest
-ssn
-cpr
-business-dk-cpr
-Updated 2 weeks ago
- Perl
-manchicken / org-version-trawler
- Code
- Issues
- Pull requests
- Discussions
-A system to trawl all repositories and identify versions.
-
-dependencies
-hacktoberfest
-security-tools
-Updated on May 12, 2021
- Perl
-bbrtj / perl-rex-commands-perlsync
- Code
- Issues
- Pull requests
-Rex::Commands::PerlSync CPAN distribution
+Download, merge & deliver lists of entries from eksisozluk.com
 
 perl
+eksisozluk
+perl-script
 hacktoberfest
-rex
-Updated 1 hour ago
+Updated on Jun 27, 2020
+ Perl
+Kelp-framework / Whelk
+ Code
+ Issues
+ Pull requests
+A friendly API framework
+
+rest-api
+perl
+webframework
+hacktoberfest
+perl-kelp
+Updated last month
  Perl
 shlomif / perl-Test-HTML-Tidy-Recursive
  Code
@@ -5642,6 +5008,976 @@ perl
 cpan
 hacktoberfest
 Updated on Jan 23
+ Perl
+mikkoi / git-mailmap
+ Code
+ Issues
+ Pull requests
+perl
+perl-module
+hacktoberfest
+Updated on Mar 19, 2019
+ Perl
+shlomif / perl-Spork-Shlomify
+ Code
+ Issues
+ Pull requests
+The Spork::Shlomify CPAN Distribution.
+
+hacktoberfest
+Updated on Oct 7, 2020
+ Perl
+domm / App-TimeTracker-Category
+ Code
+ Issues
+ Pull requests
+use categories when tracking time with App::TimeTracker
+
+timetracker
+hacktoberfest
+Updated on May 1, 2022
+ Perl
+Firesphere / pdmd-spectest
+ Code
+ Issues
+ Pull requests
+Check how well a particular markdown implementation agrees with pandoc output.
+
+hacktoberfest
+Updated on Oct 27, 2012
+ Perl
+shlomif / socialmap
+ Code
+ Issues
+ Pull requests
+Insurgent's Software old socialmap code
+
+hacktoberfest
+Updated on Dec 18, 2012
+ Perl
+domm / Web-Request-Role-JSON
+ Code
+ Issues
+ Pull requests
+Make handling JSON easier in Web::Request
+
+hacktoberfest
+Updated on Apr 4, 2021
+ Perl
+shlomif / perl-svn-pusher
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Jul 22, 2023
+ Perl
+bluet / change-password-at-once
+ Code
+ Issues
+ Pull requests
+Change password on many servers at once
+
+server
+cluster
+management
+password
+hacktoberfest
+Updated on Jun 24, 2019
+ Perl
+davorg / tw2fa
+ Code
+ Issues
+ Pull requests
+Convert TransferWise CSVs into a format that FreeAgent recognises
+
+hacktoberfest
+Updated on Sep 1, 2023
+ Perl
+perlancar / perl-App-TextTableUtils
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Dec 3, 2023
+ Perl
+davorg / towerbridge
+ Code
+ Issues
+ Pull requests
+When is Tower Bridge lifting?
+
+data
+perl
+web-scraping
+hacktoberfest
+london
+Updated on Aug 16
+ Perl
+kyzn / WWW-Eksi
+ Code
+ Issues
+ Pull requests
+WWW::Eksi - Interface for Eksisozluk.com
+
+perl
+eksisozluk
+perl5
+cpan
+hacktoberfest
+Updated on Jun 13, 2020
+ Perl
+jonasbn / perl-date-holidays-abstract
+ Code
+ Issues
+ Pull requests
+Release history of Date-Holidays-Abstract
+
+perl
+perl5
+cpan
+hacktoberfest
+date-holidays
+Updated on Aug 23
+ Perl
+Kelp-framework / Module-Config-YAML
+ Code
+ Issues
+ Pull requests
+Configure Kelp in YAML
+
+perl
+hacktoberfest
+perl-kelp
+Updated on Jun 25
+ Perl
+davorg-cpan / feed-find
+ Code
+ Issues
+ Pull requests
+Release history of Feed-Find
+
+perl
+cpan
+hacktoberfest
+Updated on Jan 23
+ Perl
+choroba / Acme-Array-MaxSize
+ Code
+ Issues
+ Pull requests
+perl5
+hacktoberfest
+Updated on Jun 1, 2022
+ Perl
+shlomif / perl-Test-WWW-Mechanize-LibXML
+ Code
+ Issues
+ Pull requests
+The Test::WWW::Mechanize::LibXML CPAN module
+
+hacktoberfest
+Updated on Oct 22, 2020
+ Perl
+shlomif / maths--riddles
+ Code
+ Issues
+ Pull requests
+Maths riddles as collected by Shlomi Fish
+
+hacktoberfest
+Updated on Nov 26, 2017
+ Perl
+shlomif / perl-Dist-Zilla-Plugin-TestRun
+ Code
+ Issues
+ Pull requests
+Dist::Zilla Plugin to run tests using "./Build runtest"/etc.
+
+hacktoberfest
+Updated on Oct 22, 2020
+ Perl
+choroba / template-plugin-tallymarks
+ Code
+ Issues
+ Pull requests
+Template filter to convert numbers to tally marks
+
+template
+perl5
+hacktoberfest
+Updated on Jun 1, 2022
+ Perl
+shlomif / spark
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Aug 27, 2019
+ Perl
+NamrataPatel1294 / perlyswitch
+ Code
+ Issues
+ Pull requests
+Switch case games with perl
+
+hacktoberfest
+Updated on Oct 19, 2020
+ Perl
+perlancar / perl-Array-Iterator
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Nov 21, 2023
+ Perl
+perlancar / perl-App-ThisDist
+ Code
+ Issues
+ Pull requests
+(No description)
+
+hacktoberfest
+Updated on Jan 5
+ Perl
+perlancar / perl-WWW-PAUSE-Simple
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Feb 18
+ Perl
+Perl-Bitcoin / Alien-libsecp256k1
+ Code
+ Issues
+ Pull requests
+Alien::libsecp256k1 CPAN distribution
+
+bitcoin
+perl
+cpan
+hacktoberfest
+Updated 2 weeks ago
+ Perl
+jonasbn / perl-critic-policy-inputoutput-prohibithighprecedentlogicaloperatorerrorhandling
+ Code
+ Issues
+ Pull requests
+Perl::Critic policy, prohibiting logical error handling in open statements
+
+perl
+bug
+policy
+perl5
+hacktoberfest
+perl-critic
+Updated last week
+ Perl
+ronsavage / Text-Table-Manifold
+ Code
+ Issues
+ Pull requests
+Render tables in manifold styles
+
+hacktoberfest
+Updated on May 26, 2021
+ Perl
+choroba / inquiry
+ Code
+ Issues
+ Pull requests
+Simple web survey application
+
+perl5
+hacktoberfest
+dancer
+Updated on Aug 12
+ Perl
+oalders / http-cookiemonster
+ Code
+ Issues
+ Pull requests
+Easily read and update your jar of HTTP::Cookies
+
+hacktoberfest
+Updated on Feb 10, 2021
+ Perl
+davorg / lotto
+ Code
+ Issues
+ Pull requests
+Simple Perl program to generate lottery numbers
+
+perl
+lottery
+hacktoberfest
+Updated on Feb 16, 2022
+ Perl
+perlancar / perl-Data-CSel
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Jun 7, 2022
+ Perl
+ioistired / slashes
+ Code
+ Issues
+ Pull requests
+code written in ///, yo
+
+hacktoberfest
+Updated on Jan 1, 2018
+ Perl
+domm / Web-Request-Role-JWT
+ Code
+ Issues
+ Pull requests
+Accessors for JSON Web Token (JWT) stored in psgix
+
+jwt
+psgi
+hacktoberfest
+Updated on Apr 4, 2021
+ Perl
+perlancar / perl-Sah-Schemas-CPAN
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Sep 25, 2022
+ Perl
+shlomif / perl-WWW-REST
+ Code
+ Issues
+ Pull requests
+The WWW::REST CPAN Dist
+
+hacktoberfest
+Updated on Oct 16, 2020
+ Perl
+shlomif / App-Freelancers-Board-Yonathan
+ Code
+ Issues
+ Pull requests
+An old idea for a freelancers / job board
+
+hacktoberfest
+Updated on Aug 28, 2018
+ Perl
+shlomif / sokoban-solver
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Aug 24, 2019
+ Perl
+shlomif / web-dir-for-artwork
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Apr 14, 2020
+ Perl
+shlomif / kde4-scripted-wallpapers
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Apr 12, 2020
+ Perl
+kyzn / fifa-world-cup-slack
+ Code
+ Issues
+ Pull requests
+A script to notify Slack channels with live updates from FIFA World Cup matches.
+
+slack
+perl
+soccer
+perl5
+slack-bot
+football
+worldcup
+hacktoberfest
+fifa
+world-cup
+Updated on Jun 13, 2020
+ Perl
+perlancar / perl-Sah-Schemas-Int
+ Code
+ Issues
+ Pull requests
+(No description)
+
+hacktoberfest
+Updated on Oct 19, 2022
+ Perl
+perlancar / perl-TableData
+ Code
+ Issues
+ Pull requests
+(No description)
+
+hacktoberfest
+hacktoberfest2021
+Updated on Apr 19, 2023
+ Perl
+Kelp-framework / Module-Template-Toolkit
+ Code
+ Issues
+ Pull requests
+Template::Toolkit adapter for Kelp
+
+perl
+hacktoberfest
+perl-kelp
+Updated on Jan 25, 2019
+ Perl
+perlancar / perl-Complete-Unix
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Jul 17
+ Perl
+perlancar / perl-Color-RGB-Util
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Dec 12, 2023
+ Perl
+shlomif / Task-BeLike-SHLOMIF
+ Code
+ Issues
+ Pull requests
+Task-BeLike-SHLOMIF
+
+hacktoberfest
+Updated on Jun 14
+ Perl
+perlancar / perl-App-setop
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Aug 2, 2021
+ Perl
+kabanoid / WWW-Deezer
+ Code
+ Issues
+ Pull requests
+WWW::Deezer - Perl interface to Deezer API
+
+perl
+hacktoberfest
+Updated on Jan 19, 2021
+ Perl
+shlomif / perl-Acme-MetaSyntactic-mlpfim
+ Code
+ Issues
+ Pull requests
+A “My Little Pony - Friendship is Magic” theme for Acme::MetaSyntactic
+
+hacktoberfest
+Updated on Oct 22, 2020
+ Perl
+perlancar / perl-Data-Unixish
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Aug 2, 2021
+ Perl
+perlancar / perl-Data-Dmp
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Nov 15, 2022
+ Perl
+domm / Plack-Middleware-StatsPerRequest
+ Code
+ Issues
+ Pull requests
+Measure HTTP stats on each request
+
+plack
+hacktoberfest
+Updated on Jan 3, 2021
+ Perl
+shlomif / shlomif-euler156
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Dec 11, 2018
+ Perl
+perlancar / perl-Calendar-Dates
+ Code
+ Issues
+ Pull requests
+(No description)
+
+hacktoberfest
+Updated on Aug 2, 2021
+ Perl
+Hamakor / august-penguin-registration-form--in-perl5
+ Code
+ Issues
+ Pull requests
+Old registration form for August Penguin in Perl 5
+
+hacktoberfest
+Updated on Dec 28, 2019
+ Perl
+shlomif / lmn
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Dec 29, 2021
+ Perl
+perlancar / perl-URI-Info
+ Code
+ Issues
+ Pull requests
+(No description)
+
+hacktoberfest
+hacktoberfest2021
+Updated on Jun 21, 2023
+ Perl
+simbabque / MooX-Clone
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Sep 18, 2023
+ Perl
+nawglan / iqblock
+ Code
+ Issues
+ Pull requests
+Repo collecting entries that can solve a simple puzzle.
+
+hacktoberfest
+Updated on Oct 29, 2021
+ Perl
+Kelp-framework / Extension-Controller
+ Code
+ Issues
+ Pull requests
+Base class for a Kelp controller
+
+perl
+hacktoberfest
+perl-kelp
+Updated on Jul 8
+ Perl
+jonasbn / perl-critic-policy-builtinfunctions-prohibitshelldispatch
+ Code
+ Issues
+ Pull requests
+Perl::Critic::Policy::BuiltinFunctions::ProhibitShellDispatch - simple policy prohibiting shell dispatching
+
+perl
+policy
+perl5
+hacktoberfest
+perl-critic
+Updated 2 weeks ago
+ Perl
+davorg-cpan / ogg-vorbis-header-pureperl
+ Code
+ Issues
+ Pull requests
+Perl interface to the Ogg/Vorbis header.
+
+perl
+cpan
+hacktoberfest
+Updated on Jan 23
+ Perl
+jonasbn / pcpmrvf
+ Code
+ Issues
+ Pull requests
+Perl::Critic::Policy::logicLAB::RequireVersionFormat - policy to handle format of version numbers
+
+perl
+policy
+perl5
+hacktoberfest
+perl-critic
+Updated on Aug 14
+ Perl
+WyriHaximus / php5-fpm-munin-plugins
+ Code
+ Issues
+ Pull requests
+A set of Munin plugins for PHP5-FPM
+
+hacktoberfest
+Updated on May 1
+ Perl
+shlomif / Freecell-4fc-solving-logs
+ Code
+ Issues
+ Pull requests
+Solving logs for Freecell with 4 freecells. From 100 million onwards.
+
+hacktoberfest
+Updated on Aug 4, 2019
+ Perl
+perlancar / perl-Complete
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Aug 2, 2021
+ Perl
+jonasbn / bdkfi
+ Code
+ Issues
+ Pull requests
+Business::DK::FI - validation of Danish FI numbers
+
+perl
+perl5
+hacktoberfest
+Updated on Sep 25, 2019
+ Perl
+shlomif / perl-Test-HTML-Recursive-DeprecatedTags
+ Code
+ Issues
+ Pull requests
+Check for deprecated HTML elements.
+
+hacktoberfest
+Updated on Oct 20, 2020
+ Perl
+domm / Plack-Middleware-PrettyException
+ Code
+ Issues
+ Pull requests
+Capture exceptions and present them as HTML or JSON
+
+psgi
+plack
+hacktoberfest
+Updated on Oct 21, 2022
+ Perl
+domm / App-TimeTracker-RT
+ Code
+ Issues
+ Pull requests
+App::TimeTracker RT (Request Tracker) plugin
+
+hacktoberfest
+Updated on Feb 5, 2021
+ Perl
+shlomif / perl5-xs-guide
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Aug 23, 2019
+ Perl
+shlomif / gimp-test-suite
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Apr 12, 2020
+ Perl
+shlomif / XML-LibXML-Iterator
+ Code
+ Issues
+ Pull requests
+https://metacpan.org/pod/XML::LibXML::Iterator
+
+hacktoberfest
+Updated on Oct 20, 2020
+ Perl
+shlomif / perl-Code-TidyAll-Plugin-TestCount
+ Code
+ Issues
+ Pull requests
+Test-Count plugin for Code-TidyAll
+
+hacktoberfest
+Updated on Oct 20, 2020
+ Perl
+shlomif / riddle-not-a-not-b-not-c
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Aug 23, 2019
+ Perl
+shlomif / perl-parser-mgc-hg
+ Code
+ Issues
+ Pull requests
+Git fork of Parser::MGC
+
+hacktoberfest
+Updated on Apr 12, 2020
+ Perl
+perlancar / perl-App-GoogleSearchUtils
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Jul 17
+ Perl
+shlomif / web-cpan-site
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Apr 5
+ Perl
+os-autoinst / os-autoinst-common
+ Code
+ Issues
+ Pull requests
+Common helpers for os-autoinst and openQA development
+
+hacktoberfest
+Updated 2 weeks ago
+ Perl
+bbrtj / perl-app-hl7-compare
+ Code
+ Issues
+ Pull requests
+Perl distribution for comparing HL7 messages against one another
+
+perl
+hl7
+hacktoberfest
+Updated on Jun 11
+ Perl
+davorg / cookingvinyl
+ Code
+ Issues
+ Pull requests
+Web site with info about Cooking Vinyl records
+
+music
+data
+perl
+hacktoberfest
+cooking-vinyl
+Updated on Jun 14
+ Perl
+jonasbn / perl-business-dk-cvr
+ Code
+ Issues
+ Pull requests
+Business::DK::CVR - Danish CVR (VAT Registration) code generator/validator
+
+distribution
+validation
+generator
+perl
+validator
+denmark
+perl5
+vat
+hacktoberfest
+cvr
+business-dk-cvr
+Updated 2 weeks ago
+ Perl
+jonasbn / perl-business-dk-cpr
+ Code
+ Issues
+ Pull requests
+Business::DK::CPR - Danish CPR (SSN) code generator/validator
+
+distribution
+validation
+generator
+validator
+denmark
+perl5
+hacktoberfest
+ssn
+cpr
+business-dk-cpr
+Updated 2 weeks ago
+ Perl
+manchicken / org-version-trawler
+ Code
+ Issues
+ Pull requests
+ Discussions
+A system to trawl all repositories and identify versions.
+
+dependencies
+hacktoberfest
+security-tools
+Updated on May 12, 2021
+ Perl
+bbrtj / perl-rex-commands-perlsync
+ Code
+ Issues
+ Pull requests
+Rex::Commands::PerlSync CPAN distribution
+
+perl
+hacktoberfest
+rex
+Updated 2 days ago
+ Perl
+WyriHaximus / php5-fpm-munin-plugins
+ Code
+ Issues
+ Pull requests
+A set of Munin plugins for PHP5-FPM
+
+hacktoberfest
+Updated on May 1
+ Perl
+shlomif / Freecell-4fc-solving-logs
+ Code
+ Issues
+ Pull requests
+Solving logs for Freecell with 4 freecells. From 100 million onwards.
+
+hacktoberfest
+Updated on Aug 4, 2019
+ Perl
+perlancar / perl-Complete
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Aug 2, 2021
+ Perl
+jonasbn / bdkfi
+ Code
+ Issues
+ Pull requests
+Business::DK::FI - validation of Danish FI numbers
+
+perl
+perl5
+hacktoberfest
+Updated on Sep 25, 2019
+ Perl
+shlomif / perl-Test-HTML-Recursive-DeprecatedTags
+ Code
+ Issues
+ Pull requests
+Check for deprecated HTML elements.
+
+hacktoberfest
+Updated on Oct 20, 2020
+ Perl
+domm / Plack-Middleware-PrettyException
+ Code
+ Issues
+ Pull requests
+Capture exceptions and present them as HTML or JSON
+
+psgi
+plack
+hacktoberfest
+Updated on Oct 21, 2022
+ Perl
+domm / App-TimeTracker-RT
+ Code
+ Issues
+ Pull requests
+App::TimeTracker RT (Request Tracker) plugin
+
+hacktoberfest
+Updated on Feb 5, 2021
+ Perl
+shlomif / perl5-xs-guide
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Aug 23, 2019
+ Perl
+shlomif / gimp-test-suite
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Apr 12, 2020
+ Perl
+shlomif / XML-LibXML-Iterator
+ Code
+ Issues
+ Pull requests
+https://metacpan.org/pod/XML::LibXML::Iterator
+
+hacktoberfest
+Updated on Oct 20, 2020
+ Perl
+shlomif / perl-Code-TidyAll-Plugin-TestCount
+ Code
+ Issues
+ Pull requests
+Test-Count plugin for Code-TidyAll
+
+hacktoberfest
+Updated on Oct 20, 2020
+ Perl
+shlomif / riddle-not-a-not-b-not-c
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Aug 23, 2019
+ Perl
+shlomif / perl-parser-mgc-hg
+ Code
+ Issues
+ Pull requests
+Git fork of Parser::MGC
+
+hacktoberfest
+Updated on Apr 12, 2020
+ Perl
+perlancar / perl-App-GoogleSearchUtils
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Jul 17
+ Perl
+shlomif / web-cpan-site
+ Code
+ Issues
+ Pull requests
+hacktoberfest
+Updated on Apr 5
+ Perl
+os-autoinst / os-autoinst-common
+ Code
+ Issues
+ Pull requests
+Common helpers for os-autoinst and openQA development
+
+hacktoberfest
+Updated 2 weeks ago
+ Perl
+bbrtj / perl-app-hl7-compare
+ Code
+ Issues
+ Pull requests
+Perl distribution for comparing HL7 messages against one another
+
+perl
+hl7
+hacktoberfest
+Updated on Jun 11
  Perl
 domm / Measure-Everything
  Code
@@ -6048,162 +6384,6 @@ The Data::JavaScript module.
 hacktoberfest
 Updated on Oct 24, 2020
  Perl
-perlancar / perl-App-setop
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Aug 2, 2021
- Perl
-kabanoid / WWW-Deezer
- Code
- Issues
- Pull requests
-WWW::Deezer - Perl interface to Deezer API
-
-perl
-hacktoberfest
-Updated on Jan 19, 2021
- Perl
-shlomif / perl-Acme-MetaSyntactic-mlpfim
- Code
- Issues
- Pull requests
-A “My Little Pony - Friendship is Magic” theme for Acme::MetaSyntactic
-
-hacktoberfest
-Updated on Oct 22, 2020
- Perl
-perlancar / perl-Data-Unixish
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Aug 2, 2021
- Perl
-perlancar / perl-Data-Dmp
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Nov 15, 2022
- Perl
-domm / Plack-Middleware-StatsPerRequest
- Code
- Issues
- Pull requests
-Measure HTTP stats on each request
-
-plack
-hacktoberfest
-Updated on Jan 3, 2021
- Perl
-shlomif / shlomif-euler156
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Dec 11, 2018
- Perl
-perlancar / perl-Calendar-Dates
- Code
- Issues
- Pull requests
-(No description)
-
-hacktoberfest
-Updated on Aug 2, 2021
- Perl
-Hamakor / august-penguin-registration-form--in-perl5
- Code
- Issues
- Pull requests
-Old registration form for August Penguin in Perl 5
-
-hacktoberfest
-Updated on Dec 28, 2019
- Perl
-shlomif / lmn
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Dec 29, 2021
- Perl
-perlancar / perl-URI-Info
- Code
- Issues
- Pull requests
-(No description)
-
-hacktoberfest
-hacktoberfest2021
-Updated on Jun 21, 2023
- Perl
-simbabque / MooX-Clone
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Sep 18, 2023
- Perl
-nawglan / iqblock
- Code
- Issues
- Pull requests
-Repo collecting entries that can solve a simple puzzle.
-
-hacktoberfest
-Updated on Oct 29, 2021
- Perl
-Kelp-framework / Extension-Controller
- Code
- Issues
- Pull requests
-Base class for a Kelp controller
-
-perl
-hacktoberfest
-perl-kelp
-Updated on Jul 8
- Perl
-jonasbn / pcpmrvf
- Code
- Issues
- Pull requests
-Perl::Critic::Policy::logicLAB::RequireVersionFormat - policy to handle format of version numbers
-
-perl
-policy
-perl5
-hacktoberfest
-perl-critic
-Updated on Aug 14
- Perl
-jonasbn / perl-critic-policy-builtinfunctions-prohibitshelldispatch
- Code
- Issues
- Pull requests
-Perl::Critic::Policy::BuiltinFunctions::ProhibitShellDispatch - simple policy prohibiting shell dispatching
-
-perl
-policy
-perl5
-hacktoberfest
-perl-critic
-Updated 2 weeks ago
- Perl
-davorg-cpan / ogg-vorbis-header-pureperl
- Code
- Issues
- Pull requests
-Perl interface to the Ogg/Vorbis header.
-
-perl
-cpan
-hacktoberfest
-Updated on Jan 23
- Perl
 davorg / nms-cgi
  Code
  Issues
@@ -6360,195 +6540,11 @@ perl-module
 hacktoberfest
 Updated on Dec 21, 2023
  Perl
-ronsavage / Text-Table-Manifold
- Code
- Issues
- Pull requests
-Render tables in manifold styles
-
-hacktoberfest
-Updated on May 26, 2021
- Perl
-choroba / inquiry
- Code
- Issues
- Pull requests
-Simple web survey application
-
-perl5
-hacktoberfest
-dancer
-Updated on Aug 12
- Perl
-oalders / http-cookiemonster
- Code
- Issues
- Pull requests
-Easily read and update your jar of HTTP::Cookies
-
-hacktoberfest
-Updated on Feb 10, 2021
- Perl
-davorg / lotto
- Code
- Issues
- Pull requests
-Simple Perl program to generate lottery numbers
-
-perl
-lottery
-hacktoberfest
-Updated on Feb 16, 2022
- Perl
-perlancar / perl-Data-CSel
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Jun 7, 2022
- Perl
-ioistired / slashes
- Code
- Issues
- Pull requests
-code written in ///, yo
-
-hacktoberfest
-Updated on Jan 1, 2018
- Perl
-domm / Web-Request-Role-JWT
- Code
- Issues
- Pull requests
-Accessors for JSON Web Token (JWT) stored in psgix
-
-jwt
-psgi
-hacktoberfest
-Updated on Apr 4, 2021
- Perl
-perlancar / perl-Sah-Schemas-CPAN
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Sep 25, 2022
- Perl
-shlomif / perl-WWW-REST
- Code
- Issues
- Pull requests
-The WWW::REST CPAN Dist
-
-hacktoberfest
-Updated on Oct 16, 2020
- Perl
-shlomif / App-Freelancers-Board-Yonathan
- Code
- Issues
- Pull requests
-An old idea for a freelancers / job board
-
-hacktoberfest
-Updated on Aug 28, 2018
- Perl
-shlomif / sokoban-solver
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Aug 24, 2019
- Perl
-shlomif / web-dir-for-artwork
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Apr 14, 2020
- Perl
-shlomif / kde4-scripted-wallpapers
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Apr 12, 2020
- Perl
-kyzn / fifa-world-cup-slack
- Code
- Issues
- Pull requests
-A script to notify Slack channels with live updates from FIFA World Cup matches.
-
-slack
-perl
-soccer
-perl5
-slack-bot
-football
-worldcup
-hacktoberfest
-fifa
-world-cup
-Updated on Jun 13, 2020
- Perl
-perlancar / perl-Sah-Schemas-Int
- Code
- Issues
- Pull requests
-(No description)
-
-hacktoberfest
-Updated on Oct 19, 2022
- Perl
-perlancar / perl-TableData
- Code
- Issues
- Pull requests
-(No description)
-
-hacktoberfest
-hacktoberfest2021
-Updated on Apr 19, 2023
- Perl
-Kelp-framework / Module-Template-Toolkit
- Code
- Issues
- Pull requests
-Template::Toolkit adapter for Kelp
-
-perl
-hacktoberfest
-perl-kelp
-Updated on Jan 25, 2019
- Perl
-perlancar / perl-Complete-Unix
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Jul 17
- Perl
-perlancar / perl-Color-RGB-Util
- Code
- Issues
- Pull requests
-hacktoberfest
-Updated on Dec 12, 2023
- Perl
-shlomif / Task-BeLike-SHLOMIF
- Code
- Issues
- Pull requests
-Task-BeLike-SHLOMIF
-
-hacktoberfest
-Updated on Jun 14
- Perl
 Created by DigitalOcean and GitHub
 
 Released October 2014
 
- 32.3k followers
+ 32.5k followers
  hacktoberfest.com
 Footer
 © 2024 GitHub, Inc.
